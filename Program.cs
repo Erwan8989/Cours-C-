@@ -8,6 +8,10 @@ namespace Cours_C_
         static void Main(string[] args)
         {
 
+
+
+            
+
             // ************************************************** Entrer nom et prenom ************************************************
             /*
             //Saisie du prenom
