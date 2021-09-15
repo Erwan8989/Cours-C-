@@ -28,7 +28,7 @@ namespace Cours_C_
              Afficher(Nom);
             */
 
-            // ******************************* Comparer deux valeurs ************************************
+            // ******************************* Comparer deux valeurs *************************************
 
             /*
             Console.WriteLine("Entrez une valeur");
