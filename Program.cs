@@ -42,6 +42,9 @@ namespace Cours_C_
             bool Result = Egalite(b, c);
             Console.WriteLine("Le resulstat du booléen est " +Result);
             */
+    
+                   
+            
             
             // ************************************************ Entrer numéro professionnel ************************************
 
@@ -66,22 +69,52 @@ namespace Cours_C_
             }
             */
 
+            // ************************ If amélioré *************************
+
+            /*
             for (int a = 0; a < 10; a++)
             {
                 Console.WriteLine("Iteration numero " +a);
                 int test = a % 50 == 0 ? 1 : 2;
-                /*
-                Equivaut à :
-                int test
-                if (a%50 == 0)
-                    test = 2
-                else
-                    test = 1
-                */
+                
+                // Equivaut à :
+                // int test
+                // if (a%50 == 0)
+                //     test = 2
+                // else
+                //     test = 1
+                
 
                 Console.WriteLine("test : " +test);
+                */
+
+                // ******************************* Enoncé 1, question 6 ******************************
+                Console.WriteLine("Entrez une valeur de type int");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Le type et la taille de la variable a est : ");
+                Console.WriteLine(a.GetType());  
+
+                Console.WriteLine("Entrez une seconde valeur de type int");
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine("Le type et la taille de la variable b est : ");
+                Console.WriteLine(b.GetType());  
+
+                bool Result = Egalite(a, b);
+                Console.WriteLine("Si les deux valeurs précédentes sont égales, alors le booléen vaudra true. Résulat : " +Result);
+                Console.WriteLine("Le type et la taille de la variable Result est : ");
+                Console.WriteLine(Result.GetType());  
+
+
+
+                // ****************************** Enoncé 1, question 7 **************************************************
+
             }
-        }
+        
+        
+
+
+
+
 
         //méthode (fonction) qui renvoie le prenom ou par parametres
 
