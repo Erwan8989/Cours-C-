@@ -50,6 +50,7 @@
 //             int nb_int = int.Parse(Console.ReadLine());
 //             sbyte nb_sbyte = (sbyte)nb_int;
 
+//             // Condition qui explique pourquoi la conversion pourrait avoir un résulat innatendu
 //             if (nb_int > 127 || nb_int < -128)
 //             {   
 //                 Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
@@ -69,6 +70,7 @@
 //             int nb_int2 = int.Parse(Console.ReadLine());
 //             ushort nb_ushort = (ushort)nb_int2;
 
+//             // Condition qui explique pourquoi la conversion pourrait avoir un résulat innatendu
 //             if (nb_int2 < 0 || nb_int2 > 65535)
 //             {   
 //                 Console.WriteLine("Le nombre entier de type short que vous avez entré {0}, converti en type ushort donne {1}", nb_int2, nb_ushort);
