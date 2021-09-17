@@ -89,7 +89,7 @@ namespace Cours_C_
                 */
 
                 // ******************************* Enoncé 1, question 6 ******************************
-                /*
+                
                 Console.WriteLine("Entrez une valeur de type int");
                 int a = int.Parse(Console.ReadLine());
                 Console.WriteLine("Le type et la taille de la variable a est : ");
@@ -105,10 +105,11 @@ namespace Cours_C_
                 Console.WriteLine("Le type et la taille de la variable Result est : ");
                 Console.WriteLine(Result.GetType());  
 
-                */
+                
 
                 // ****************************** Enoncé 1, question 7 **************************************************
                 
+                // Conversion d'un double vers un short
                 Console.WriteLine("");
                 Console.WriteLine("Conversion d'un double vers un short");
                 Console.WriteLine("");
@@ -119,7 +120,7 @@ namespace Cours_C_
 
                 Console.WriteLine("Le nombre flotant de type double que vous avez entré {0}, converti en type short donne {1}", nb_float, nb_short);
 
-
+                // Conversion d'un int vers un sbyte
                 Console.WriteLine("");
                 Console.WriteLine("Conversion d'un int vers un sbyte");
                 Console.WriteLine("");
@@ -138,7 +139,7 @@ namespace Cours_C_
                     Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
                 }
 
-
+                // Conversion d'un int vers un ushort
                 Console.WriteLine("");
                 Console.WriteLine("Conversion d'un int vers un ushort");
                 Console.WriteLine("");
