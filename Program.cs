@@ -221,7 +221,7 @@ namespace Cours_C_
     String s = "bonjour";
     Console.WriteLine($"La taille de la chaine est de {s.Length} caractères");
 
-    s=s.Replace('O','Z');
+    s=s.Replace("O","Z");
     Console.WriteLine("La chaine devient : " +s);
 
     s=s.Insert(3,"-y-");
