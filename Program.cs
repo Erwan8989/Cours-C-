@@ -155,65 +155,97 @@ namespace Cours_C_
 //             // ****************************** Enoncé 1, question 7 **************************************************
             
             // Conversion d'un double vers un short
-            Console.WriteLine("");
-            Console.WriteLine("Conversion d'un double vers un short");
-            Console.WriteLine("");
+    //         Console.WriteLine("");
+    //         Console.WriteLine("Conversion d'un double vers un short");
+    //         Console.WriteLine("");
 
-            Console.WriteLine("Entrez un nombre flotant");
-            double nb_float = double.Parse(Console.ReadLine());
-            short nb_short = (short)nb_float;
+    //         Console.WriteLine("Entrez un nombre flotant");
+    //         double nb_float = double.Parse(Console.ReadLine());
+    //         short nb_short = (short)nb_float;
 
-            Console.WriteLine("Le nombre flotant de type double que vous avez entré {0}, converti en type short donne {1}", nb_float, nb_short);
+    //         Console.WriteLine("Le nombre flotant de type double que vous avez entré {0}, converti en type short donne {1}", nb_float, nb_short);
 
-            // Conversion d'un int vers un sbyte
-            Console.WriteLine("");
-            Console.WriteLine("Conversion d'un int vers un sbyte");
-            Console.WriteLine("");
+    //         // Conversion d'un int vers un sbyte
+    //         Console.WriteLine("");
+    //         Console.WriteLine("Conversion d'un int vers un sbyte");
+    //         Console.WriteLine("");
 
-            Console.WriteLine("Entrez un nombre entier");
-            int nb_int = int.Parse(Console.ReadLine());
-            sbyte nb_sbyte = (sbyte)nb_int;
+    //         Console.WriteLine("Entrez un nombre entier");
+    //         int nb_int = int.Parse(Console.ReadLine());
+    //         sbyte nb_sbyte = (sbyte)nb_int;
 
-            if (nb_int > 127 || nb_int < -128)
-            {   
-                Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
-                Console.WriteLine("La valeur du sbyte est différente du int car un sbyte ne peut qu'avoir une valeur comprise entre -128 et 127");
-            }
-            else
-            {
-                Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
-            }
+    //         if (nb_int > 127 || nb_int < -128)
+    //         {   
+    //             Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
+    //             Console.WriteLine("La valeur du sbyte est différente du int car un sbyte ne peut qu'avoir une valeur comprise entre -128 et 127");
+    //         }
+    //         else
+    //         {
+    //             Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int, nb_sbyte);
+    //         }
 
-            // Conversion d'un int vers un ushort
-            Console.WriteLine("");
-            Console.WriteLine("Conversion d'un int vers un ushort");
-            Console.WriteLine("");
+    //         // Conversion d'un int vers un ushort
+    //         Console.WriteLine("");
+    //         Console.WriteLine("Conversion d'un int vers un ushort");
+    //         Console.WriteLine("");
 
-            Console.WriteLine("Entrez un nombre entier");
-            int nb_int2 = int.Parse(Console.ReadLine());
-            ushort nb_ushort = (ushort)nb_int2;
+    //         Console.WriteLine("Entrez un nombre entier");
+    //         int nb_int2 = int.Parse(Console.ReadLine());
+    //         ushort nb_ushort = (ushort)nb_int2;
 
-            if (nb_int2 < 0 || nb_int2 > 65535)
-            {   
-                Console.WriteLine("Le nombre entier de type short que vous avez entré {0}, converti en type ushort donne {1}", nb_int2, nb_ushort);
-                Console.WriteLine("La valeur du short est différente du ushort car un ushort ne peut qu'avoir une valeur comprise entre 0 et 65535");
-            }
-            else
-            {
-                Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int2, nb_ushort);
-            }
+    //         if (nb_int2 < 0 || nb_int2 > 65535)
+    //         {   
+    //             Console.WriteLine("Le nombre entier de type short que vous avez entré {0}, converti en type ushort donne {1}", nb_int2, nb_ushort);
+    //             Console.WriteLine("La valeur du short est différente du ushort car un ushort ne peut qu'avoir une valeur comprise entre 0 et 65535");
+    //         }
+    //         else
+    //         {
+    //             Console.WriteLine("Le nombre entier de type int que vous avez entré {0}, converti en type sbyte donne {1}", nb_int2, nb_ushort);
+    //         }
 
 
-        }
+    //     }
 
-        static bool Egalite(int x, int y){
-            if (x == y)
-                return true;
+    //     static bool Egalite(int x, int y){
+    //         if (x == y)
+    //             return true;
 
-            else
-                return false;
+    //         else
+    //             return false;
             
-        }
+    //     }
+    // }
+
+    // ******************************* Comparer deux valeurs ************************************
+
+    String s = "bonjour";
+    Console.WriteLine("La taille de la chaine est" +s.Length);
+    s=s.Replace('O','Z');
+
+
+    Console.WriteLine("La chaine devient :" +s);
+    s=s.Insert(3,"-y-");
+
+    Console.WriteLine("La chaine devient :" +s);
+    if (s.Contains("ur")==true)
+    Console.WriteLine("La chaine contient ur");
+    
+    if (s.Equals("Bonjour")==false)
+    Console.WriteLine("La chaine n'est pas égale à bonjour");
+
+    String m =s.Substring(0,2);
+    Console.WriteLine("Les deux premières lettres sont :" +m);
+    Console.WriteLine("La chaine en majuscule :" +s.ToUpper());
+    Console.WriteLine("La chaine en majuscule :" +s.ToLower());
+
+
+
+    
+
+
+
+}
+
     }
 }
 
