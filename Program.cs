@@ -155,15 +155,15 @@ namespace Cours_C_
 //             // ****************************** Enoncé 1, question 7 **************************************************
             
             // Conversion d'un double vers un short
-    //         Console.WriteLine("");
-    //         Console.WriteLine("Conversion d'un double vers un short");
-    //         Console.WriteLine("");
+            // Console.WriteLine("");
+            // Console.WriteLine("Conversion d'un double vers un short");
+            // Console.WriteLine("");
 
-    //         Console.WriteLine("Entrez un nombre flotant");
-    //         double nb_float = double.Parse(Console.ReadLine());
-    //         short nb_short = (short)nb_float;
+            // Console.WriteLine("Entrez un nombre flotant");
+            // double nb_float = double.Parse(Console.ReadLine());
+            // short nb_short = (short)nb_float;
 
-    //         Console.WriteLine("Le nombre flotant de type double que vous avez entré {0}, converti en type short donne {1}", nb_float, nb_short);
+            // Console.WriteLine($"Le nombre flotant de type double que vous avez entré {nb_float}, converti en type short donne {nb_short}");
 
     //         // Conversion d'un int vers un sbyte
     //         Console.WriteLine("");
@@ -220,12 +220,11 @@ namespace Cours_C_
 
     String s = "bonjour";
     Console.WriteLine($"La taille de la chaine est de {s.Length} caractères");
+
     s=s.Replace('O','Z');
-
-
     Console.WriteLine("La chaine devient : " +s);
-    s=s.Insert(3,"-y-");
 
+    s=s.Insert(3,"-y-");
     Console.WriteLine("La chaine devient : " +s);
     if (s.Contains("ur")==true)
     Console.WriteLine("La chaine contient ur");
@@ -237,12 +236,6 @@ namespace Cours_C_
     Console.WriteLine("Les deux premières lettres sont : " +m);
     Console.WriteLine("La chaine en majuscule : " +s.ToUpper());
     Console.WriteLine("La chaine en majuscule : " +s.ToLower());
-
-
-
-    
-
-
 
 }
 
