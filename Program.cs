@@ -88,6 +88,10 @@ namespace Cours_C_
                 Console.WriteLine("test : " +test);
                 */
 
+
+                /**************************************************************************************************
+                
+
                 // ******************************* Enoncé 1, question 6 ******************************
                 
                 Console.WriteLine("Entrez une valeur de type int");
@@ -160,10 +164,6 @@ namespace Cours_C_
 
 
             }
-        
-        
-
-
 
 
 
