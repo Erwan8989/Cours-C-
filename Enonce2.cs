@@ -13,7 +13,7 @@
 //             String S = S1 + S2;
 //             Console.WriteLine(S);
 //             // String S = S1 + S2 + 5; On ne peut pas cancaténer un entier à S vu qu'il s'agit d'un string 
-
+                // ON PEUT CONCATENER EN METTANT DANS UN INT
 //             Console.WriteLine(S.Length);
 
 //             Console.WriteLine(S.ToUpper());
