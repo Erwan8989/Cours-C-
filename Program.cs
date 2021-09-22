@@ -219,14 +219,14 @@ namespace Cours_C_
     // ******************************* Comparer deux valeurs ************************************
 
     String s = "bonjour";
-    Console.WriteLine("La taille de la chaine est" +s.Length);
+    Console.WriteLine($"La taille de la chaine est de {s.Length} caractères");
     s=s.Replace('O','Z');
 
 
-    Console.WriteLine("La chaine devient :" +s);
+    Console.WriteLine("La chaine devient : " +s);
     s=s.Insert(3,"-y-");
 
-    Console.WriteLine("La chaine devient :" +s);
+    Console.WriteLine("La chaine devient : " +s);
     if (s.Contains("ur")==true)
     Console.WriteLine("La chaine contient ur");
     
@@ -234,9 +234,9 @@ namespace Cours_C_
     Console.WriteLine("La chaine n'est pas égale à bonjour");
 
     String m =s.Substring(0,2);
-    Console.WriteLine("Les deux premières lettres sont :" +m);
-    Console.WriteLine("La chaine en majuscule :" +s.ToUpper());
-    Console.WriteLine("La chaine en majuscule :" +s.ToLower());
+    Console.WriteLine("Les deux premières lettres sont : " +m);
+    Console.WriteLine("La chaine en majuscule : " +s.ToUpper());
+    Console.WriteLine("La chaine en majuscule : " +s.ToLower());
 
 
 
