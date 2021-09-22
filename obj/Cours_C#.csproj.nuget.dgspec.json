@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\c #\\Cours_C#\\Cours_C#.csproj": {}
+    "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\c #\\Cours_C#\\Cours_C#.csproj": {
+    "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\c #\\Cours_C#\\Cours_C#.csproj",
+        "projectUniqueName": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj",
         "projectName": "Cours_C#",
-        "projectPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\c #\\Cours_C#\\Cours_C#.csproj",
+        "projectPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj",
         "packagesPath": "C:\\Users\\erwan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\c #\\Cours_C#\\obj\\",
+        "outputPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erwan\\AppData\\Roaming\\NuGet\\NuGet.Config"
