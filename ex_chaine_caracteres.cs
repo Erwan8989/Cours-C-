@@ -1,4 +1,4 @@
-﻿using System;
+/*using System;
 
 namespace Cours_C_
 {
@@ -9,7 +9,7 @@ namespace Cours_C_
             String s = "bonjour";
             Console.WriteLine("la taille de la chaine est " +s.Length);
 
-            s = s.Replace("o", "z");
+            s = s.Replace('o', 'z');
             Console.WriteLine("la chaine devient : " +s);
 
             s = s.Insert(3, "-y-");
@@ -32,3 +32,5 @@ namespace Cours_C_
         }
     }
 }
+
+*/
