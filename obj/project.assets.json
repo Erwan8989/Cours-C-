@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\erwan\\.nuget\\packages\\": {}
+    "C:\\Users\\Jérémy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj",
+      "projectUniqueName": "D:\\Cours B2 2021-2022\\C#\\Cours-C-\\Cours_C#.csproj",
       "projectName": "Cours_C#",
-      "projectPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\Cours_C#.csproj",
-      "packagesPath": "C:\\Users\\erwan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\obj\\",
+      "projectPath": "D:\\Cours B2 2021-2022\\C#\\Cours-C-\\Cours_C#.csproj",
+      "packagesPath": "C:\\Users\\Jérémy\\.nuget\\packages\\",
+      "outputPath": "D:\\Cours B2 2021-2022\\C#\\Cours-C-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\erwan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jérémy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
