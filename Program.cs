@@ -396,10 +396,10 @@ namespace Cours_C_
 
             // 3. Afficher les entiers de 0 à 15 par pas de 2.
 
-            // for(int x=0; x<=15;x++){
-            //     if(x%2 = 0) continue;
-            //     else Console.WriteLine(x);
-            // }
+            for(int x=0; x<=15;x+=2){
+                // if(x%2 = 0) continue;
+                /*else*/ Console.WriteLine(x);
+            }
 
 
 
