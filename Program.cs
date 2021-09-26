@@ -42,7 +42,7 @@ namespace Cours_C_
             Console.WriteLine("Le maximum est " +a);
 
             bool Result = Egalite(b, c);
-            Console.WriteLine("Le resulstat du booléen est " +Result);
+            Console.WriteLine("Le resultat du booléen est " +Result);
             */
             
             // ************************************************ Case : Break ************************************
@@ -351,7 +351,7 @@ namespace Cours_C_
             // 2. Définir un tableau d’entiers dynamique une dimension puis le trier selon l’ordre croissant.
 
             // int[] x = new int[]   { 1, 2 ,3} ;
-            // Array.Sort(x); // Fonctionne sort ordonne de manière croissante le code
+            // Array.Sort(x); // Fonction sort ordonne de manière croissante le code
 
             // foreach(int Value in x)
             // {
