@@ -304,40 +304,39 @@ namespace Cours_C_
 
             // 9. Peut-on modifier une chaîne de caractères ? Quel est l’inconvénient ?
 
-            //             char[] Tab=new char[]{'C','h','a','i','n','e'};
-            //             string S=string.Empty;
-            //             Console.WriteLine("Chaine S :"+S);
+                        // char[] Tab=new char[]{'C','h','a','i','n','e'};
+                        // string S=string.Empty;
+                        // Console.WriteLine("Chaine S :"+S);
 
-            //             foreach(var car in Tab)
-            //             { S=S+car; // ou S+=car;
-            //             Console.WriteLine("Chaine S :"+S);
-            //             }
+                        // foreach(var car in Tab)
+                        // { S=S+car; // ou S+=car;
+                        // Console.WriteLine("Chaine S :"+S);
+                        // }
 
 
-            //             // Version StringBuilder permet de modifier une chaine de caractère
-            //             StringBuilder Sb=new StringBuilder();
-            //             Console.WriteLine("Chaine Sb :"+Sb); 
+                        // // Version StringBuilder permet de modifier une chaine de caractère
+                        // StringBuilder Sb=new StringBuilder();
+                        // Console.WriteLine("Chaine Sb :"+Sb); 
 
-            //             foreach(var car in Tab)
-            //             { Sb.Append(car); // ou S+=car;b                      
-            //             Console.WriteLine("Chaine Sb :"+Sb);
-            //             }
+                        // foreach(var car in Tab)
+                        // { Sb.Append(car); // ou S+=car;b                      
+                        // Console.WriteLine("Chaine Sb :"+Sb);
+                        // }
 
-            //             Sb.Insert(0,"Ma_");
-            //             Console.WriteLine(Sb);
+                        // Sb.Insert(0,"Ma_");
+                        // Console.WriteLine(Sb);
 
-            //             Sb.Remove(2,1);
-            //             Console.WriteLine(Sb);
+                        // Sb.Remove(2,1);
+                        // Console.WriteLine(Sb);
 
-            //             Sb.Replace('M', 'T');
-            //             Console.WriteLine(Sb);
+                        // Sb.Replace('M', 'T');
+                        // Console.WriteLine(Sb);
 
-            //             Sb.AppendLine();
-            //             Sb.Append("_Test");
-            //             Console.WriteLine(Sb);
+                        // Sb.AppendLine();
+                        // Sb.Append("_Test");
+                        // Console.WriteLine(Sb);
 
-            // }
-
+            
 
             // ****************************** Enoncé 3 :  Traitement de tableaux  **************************************** //
 
@@ -475,13 +474,13 @@ namespace Cours_C_
                 c = 0;
                 } 
             }
-            Console.ReadLine();  
+            Console.ReadLine();  }
 
     }
             
 }
 
-}
+
 
 
 
