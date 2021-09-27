@@ -1,80 +1,50 @@
-﻿// using System;
-// using System.Text;
+﻿using System;
+using System.Text;
 
-// namespace Cours_C_
-// {
-//     class Program
-//     {
-//         static void Main(string[] args)
-//         {
-//             String S1 = "Chaine 1";
-//             String S2 = "Chaine 2";
+namespace Cours_C_
+{
+    class Program
+    {
 
-//             // String S = S1 + S2;
-//             int T = 5;
-//             // Console.WriteLine(S);
-//             String S = S1 + S2 + T; //On ne peut pas cancaténer un entier à S vu qu'il s'agit d'un string. ON PEUT CONCATENER EN METTANT DANS UN INT
-//             Console.WriteLine(S.Length);
+        // ********** Fonction qui permet de retourner une chaine de caractère entrée en paramètre **********
 
-//             Console.WriteLine(S.ToUpper());
-//             Console.WriteLine(S.ToLower());
+        static string Inverse(string text)
+        {
+            // Copie des caractères de la chaine entrée, dans un tableau
+            char[] tab = text.ToCharArray();
 
-        
-//             Console.WriteLine(S.IndexOf("Chaine"));
+            //Inverse l'ordre des éléments contenu dans le tableau
+            Array.Reverse(tab);
 
-//             String m = S.Substring(2, 6);
-//             Console.WriteLine(m);
+            // Retourne la copie des éléments contenu dans le tableau sous forme d'une chaine de caractère
+            return new string(tab);
+        }
+
+
+        static void Main(string[] args)
+        {
+            // Demande de saisie, et saisie d'une chaine de caractère par l'utilisateur
+            Console.WriteLine("Veuiller saisir un mot, je vous dirai s'il est palindrome");
+            string mot = Console.ReadLine();
+
+            // Permet de mettre le mot tout en minuscule. Cela évite d'obtenir un résulat faux en cas de majuscules entrées par l'utilisateur
+            mot = mot.ToLower();
+
+            // Création d'une chaine de caractère qui contiendra le résultat de la fonction "Inverse" après l'avoir appelée. 
+            string mot_inverse = Inverse(mot);
+
+
+            /* ********** Condition qui dit si le mot est palindrome. **********
             
-
-
-//             /*
-//             string S1="Hello";
-//             string S2="Hello!";
-
-//             // Compare deux objets string et renvoie un entier qui indique la position relative dans l'ordre de trie
-//             int N=string.Compare(S1,S2);
-//             Console.WriteLine("Résultat avec Compare :"+N);
-
-//             // Compare deux objets string en évaluant la valeur numérique des valeurs char
-//             N=string.CompareOrdinal(S1,S2);
-//             Console.WriteLine("Résultat avec CompareOrdinal :"+N);
-
-//             // Compare l'instance avec un string et renvoie une valeur qui indique si cette instance précède, suit ou apparait à la même position suivant l'ordre de trie. 
-//             N=S1.CompareTo(S2);
-//             Console.WriteLine("1ier Résultat avec CompareTo : "+N);
-
-//             */
-
-//             // char[] Tab=new char[]{'C','h','a','i','n','e'};
-//             // string S=string.Empty;
-//             // Console.WriteLine("Chaine S :"+S);
-
-//             // foreach(var car in Tab)
-//             // { S=S+car; // ou S+=car;
-//             // Console.WriteLine("Chaine S :"+S);
-
-//             // }
-//             // Console.WriteLine("Chaine S :"+S);
-//             // // Version StringBuilder
-//             // StringBuilder Sb=new StringBuilder();
-//             // Console.WriteLine("Chaine Sb :"+Sb);
-
-//             // foreach(var car in Tab)
-//             // { Sb.Append(car); // ou S+=car;b
-//             // Console.WriteLine("Chaine Sb :"+Sb);
-
-//             // }
-//             // Console.WriteLine("Chaine Sb :"+Sb);
-//             // Sb.Insert(0,"Ma_");
-//             // Console.WriteLine(Sb);
-//             // Sb.Remove(2,1);
-//             // Console.WriteLine(Sb);
-//             // Sb.Replace('M', 'T');
-//             // Console.WriteLine(Sb);
-//             // Sb.AppendLine();
-//             // Sb.Append("_Test");
-//             // Console.WriteLine(Sb);
-
-//         }
-//     }
-// }
+            Si la variable "mot" qui contient la chaine entrée par l'utilisateur est égale à "mot_inverse" qui contient le mot avec les ses caratères inversés, 
+            alors il s'agit de la définition d'un "mot palindrome". 
+            Sinon, le mot n'est pas palindrome */
+            
+            if (mot == mot_inverse)
+                Console.WriteLine("Ce mot est palindrome");
+            else
+                Console.WriteLine("Ce mot n'est pas palindrome");
+            
+        }
+    }
+}
