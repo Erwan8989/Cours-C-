@@ -78,7 +78,7 @@ namespace Cours_C_
                 if (a%50 == 0)
                     test = 2
                 else
-                    test = 1
+                    test = 1 
                 */
 
         //         Console.WriteLine("test : " +test);
