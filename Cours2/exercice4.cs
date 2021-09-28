@@ -55,7 +55,13 @@
 //                  PHT=float.Parse(Console.ReadLine());
 //             }
             
-            
+//                 StringBuilder c = new StringBuilder();
+//                 int b = 10;
+                
+//                 for (int i = 0; i < b; i++){   
+//                     c.Append("*");
+//                     Console.WriteLine(c);
+//                 }  
 //         }
         
 //     }

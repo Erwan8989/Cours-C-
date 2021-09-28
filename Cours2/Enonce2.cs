@@ -1,4 +1,4 @@
-using System;
+// using System;
 // using System.Text;
 
 // namespace Cours_C_
@@ -45,35 +45,35 @@ using System;
 
 //             */
 
-//             // char[] Tab=new char[]{'C','h','a','i','n','e'};
-//             // string S=string.Empty;
-//             // Console.WriteLine("Chaine S :"+S);
+//             char[] Tab=new char[]{'C','h','a','i','n','e'};
+//              string S=string.Empty;
+//              Console.WriteLine("Chaine S :"+S);
 
-//             // foreach(var car in Tab)
-//             // { S=S+car; // ou S+=car;
-//             // Console.WriteLine("Chaine S :"+S);
+//              foreach(var car in Tab)
+//              { S=S+car; // ou S+=car;
+//              Console.WriteLine("Chaine S :"+S);
 
-//             // }
-//             // Console.WriteLine("Chaine S :"+S);
-//             // // Version StringBuilder
-//             // StringBuilder Sb=new StringBuilder();
-//             // Console.WriteLine("Chaine Sb :"+Sb);
+//              }
+//              Console.WriteLine("Chaine S :"+S);
+//              // Version StringBuilder
+//              StringBuilder Sb=new StringBuilder();
+//              Console.WriteLine("Chaine Sb :"+Sb);
 
-//             // foreach(var car in Tab)
-//             // { Sb.Append(car); // ou S+=car;b
-//             // Console.WriteLine("Chaine Sb :"+Sb);
+//              foreach(var car in Tab)
+//              { Sb.Append(car); // ou S+=car;b
+//              Console.WriteLine("Chaine Sb :"+Sb);
 
-//             // }
-//             // Console.WriteLine("Chaine Sb :"+Sb);
-//             // Sb.Insert(0,"Ma_");
-//             // Console.WriteLine(Sb);
-//             // Sb.Remove(2,1);
-//             // Console.WriteLine(Sb);
-//             // Sb.Replace('M', 'T');
-//             // Console.WriteLine(Sb);
-//             // Sb.AppendLine();
-//             // Sb.Append("_Test");
-//             // Console.WriteLine(Sb);
+//              }
+//              Console.WriteLine("Chaine Sb :"+Sb);
+//              Sb.Insert(0,"Ma_");
+//              Console.WriteLine(Sb);
+//              Sb.Remove(2,1);
+//              Console.WriteLine(Sb);
+//              Sb.Replace('M', 'T');
+//              Console.WriteLine(Sb);
+//              Sb.AppendLine();
+//              Sb.Append("_Test");
+//              Console.WriteLine(Sb);
 
 //         }
 //     }
