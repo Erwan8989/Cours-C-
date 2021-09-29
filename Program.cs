@@ -10,13 +10,13 @@ namespace Cours_C_
             // int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
             
             // // Array.Sort(tableau);
-
-            // int longueur = tableau.Length;
-
-            // for (int i = 0; i < longueur - 1; i++){
-            //     for (int j = 0; j < longueur - 1; j++){
+            // int save;
+            
+            // for (int i = 0; i < tableau.Length - 1; i++){
+            //     for (int j = 0; j < tableau.Length - 1; j++){
+                   
             //         if (tableau[j] > tableau[j+1]){
-            //             int save = tableau[j+1];
+            //             save = tableau[j+1];
             //             tableau[j+1] = tableau[j];
             //             tableau[j] = save;
             //         }
@@ -44,9 +44,26 @@ namespace Cours_C_
                         tableau2[i, j] = save;
                     }                    
                     
-                }    
-                                         
+                }                          
             } 
+
+            /* Correction Adam
+            for(k = 0; k < rowLength; k++)
+            {
+                for( l = 0; l < colLength; l++)
+                {
+                    for(int m = l + 1; m < colLength; m++)
+                    {
+                        if(array2[k,l] > array2[k,m])
+                        {
+                            int temp = array2[k,l];
+                            array2[k,l] = array2[k,m];
+                            array2[k,m] = temp;
+                        }
+                    }
+                }
+            }
+            */
 
             foreach (int value in tableau2)
             {
