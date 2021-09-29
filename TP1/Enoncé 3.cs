@@ -1,13 +1,13 @@
-// using System;
-// using System.Text;
-// using System.Collections.Generic;
+using System;
+using System.Text;
+using System.Collections.Generic;
 
-// namespace Cours_C_
-// {
-//     class Enonce3
-//     {
-//           static void Main(string[] args)
-//         { 
+namespace Cours_C_
+{
+    class Enonce3
+    {
+          static void Main(string[] args)
+        { 
             
 // //             ****************************** Enoncé 3 :  Traitement de tableaux  **************************************** //
 
@@ -76,19 +76,22 @@
             
 
 
-//     // // Création d'un tableau en 2D
-//     // string [][] noms = new string [10][];
-//     // for (int i = 0; i < noms.Length; i++) {
-//     //     noms[i] = new string [i + 1];
-//     //     }
+    // Création d'un tableau en 2D
+    
+    string [][] noms = new string [3][];
             
-//     //         // Initialisation de la deuxième dimension 
-//     // for (int i = 0; i < noms.Length; i++) {
-//     //     for (int j = 0; j < noms[i].Length; j++) {
-                        
-//     //         noms [i][j] = "Valeurs de l'élément : " + i + j;
-//     //         Console.WriteLine(noms [i][j]);
-//     //     } }
+            // Initialisation de la deuxième dimension 
+    for (int i = 0; i < noms.Length; i++) {
+        noms[i] = new string [i + 1];
+        for (int j = 0; j < noms[i].Length; j++) {
+            noms[j] = new string [j + 1];   
+                 
+            noms [i][j] = "Valeurs de l'élément : " + i + j;
+            Console.WriteLine(noms [i][j]);
+        } }
+        }
+    }
+}
 
 
 // // *****************************************  Code d'Adam  **************************************

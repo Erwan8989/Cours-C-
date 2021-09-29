@@ -7,8 +7,7 @@ namespace TP2
         public static void trier(int[] tableau){
             int save;
             for (int i = 0; i < tableau.Length - 1; i++){
-                for (int j = 0; j < tableau.Length - 1; j++){
-                   
+                for (int j = 0; j < tableau.Length - 1; j++){  
                     if (tableau[j] > tableau[j+1]){
                         save = tableau[j+1];
                         tableau[j+1] = tableau[j];
@@ -17,16 +16,14 @@ namespace TP2
                 }                
             }
         }
-
+        
         public static void afficher(int[] tableau){
             foreach (int value in tableau){
                 Console.WriteLine(value);
             }
         }
-
         static void Main(string[] args)
         {
-
             int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
             trier(tableau);
             afficher(tableau);
@@ -34,6 +31,30 @@ namespace TP2
         }
     }
 }
+
+// static void Main(string[] args) {
+
+//         int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
+
+//         int save;
+//             for (int i = 0; i < tableau.Length - 1; i++){
+//                 for (int j = 0; j < tableau.Length - 1; j++){
+                   
+//                     if (tableau[j] > tableau[j+1]){
+//                         save = tableau[j+1];
+//                         tableau[j+1] = tableau[j];
+//                         tableau[j] = save;
+//                     }
+//                 }                
+//             }
+        
+
+//           foreach (int value in tableau){
+//                 Console.WriteLine(value);
+//             }
+//         }
+
+
 
 
 
