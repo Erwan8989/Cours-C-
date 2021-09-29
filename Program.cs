@@ -5,6 +5,32 @@ namespace Cours_C_
 {
     class Program
     {
+        public static int[] creer(){
+
+            Console.WriteLine("Veuillez saisir la taille d'un tableau");
+            int taille = int.Parse(Console.ReadLine());
+        
+            while (taille <= 0 )
+            {
+                Console.WriteLine("Veuillez saisir la taille d'un tableau");
+                taille = int.Parse(Console.ReadLine());
+            }
+
+            int[] tab = new int[taille];
+            return tab;
+        
+        }
+            
+        public static int remplir(int taille){
+            int[] tab = new int[taille];
+
+            for (int i = 0; i < taille; i++)
+            {
+                Console.WriteLine("Veuillez entrer une valeur dans le tableau");
+                tab[i] = int.Parse(Console.ReadLine());
+            }
+            return tab;
+        }
         
         public static void trier(int[] tableau){
             int save;
@@ -28,15 +54,14 @@ namespace Cours_C_
 
         static void Main(string[] args)
         {
-            int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
+            int[] tableau = creer();
+
+            remplir(tableau.length);
 
             trier(tableau);
 
             afficher(tableau);
             
- 
-            
-
 
 
             // int[,] tableau2 = {{2, 8}, {10, 0}, {20, 5}};
