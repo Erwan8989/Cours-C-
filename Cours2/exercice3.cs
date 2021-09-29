@@ -1,40 +1,79 @@
-// using System;
-// using System.Text;
+// // using System;
+// // using System.Text;
 
-// namespace Cours_C_
-// {
-//     class Program
-//     {
-//         static void Main(string[] args)
-//         {
-//             int[] tableau = new int[] {2, 8, 7, 10, 0};
+// // namespace Cours_C_
+// // {
+// //     class Program
+// //     {
+// //         static void Main(string[] args)
+// //         {
+// //             // int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
             
-//             Array.Sort(tableau);
-
-//             // foreach (int value in tableau)
-//             // {
+//             // // Array.Sort(tableau);
+//             // int save;
+            
+//             // for (int i = 0; i < tableau.Length - 1; i++){
+//             //     for (int j = 0; j < tableau.Length - 1; j++){
+                   
+//             //         if (tableau[j] > tableau[j+1]){
+//             //             save = tableau[j+1];
+//             //             tableau[j+1] = tableau[j];
+//             //             tableau[j] = save;
+//             //         }
+//             //     }                
+//             // }
+ 
+//             // foreach (int value in tableau){
 //             //     Console.WriteLine(value);
 //             // }
 
-//             int[,] tableau2 = new int[,] {{2, 8, 7}, {10, 0, 45}};
+
+
+//             int[,] tableau2 = {{2, 8}, {10, 0}, {20, 5}};
             
-//             // Console.WriteLine(tableau2[0,2]);
+//             // Console.WriteLine(tableau2[2,1]);
 
-//             // Array.Sort(tableau2[0,2]);
+//             // Array.Sort(tableau2);
+//             int longueur2 = tableau2.Length;
 
-//             // tableau2.Sort();
+//             for (int i = 0; i <= 2; i++){
+//                 for (int j = 0; j < 1; j++){
+//                     if (tableau2[i, j] > tableau2[i, j+1]){
+//                         int save = tableau2[i, j+1];
+//                         tableau2[i, j+1] = tableau2[i, j];
+//                         tableau2[i, j] = save;
+//                     }                    
+                    
+//                 }                          
+//             } 
 
-//             // foreach (int value in tableau2)
-//             // {
-//             //     Console.WriteLine(value);
-//             // }
+//             /* Correction Adam
+//             for(k = 0; k < rowLength; k++)
+//             {
+//                 for( l = 0; l < colLength; l++)
+//                 {
+//                     for(int m = l + 1; m < colLength; m++)
+//                     {
+//                         if(array2[k,l] > array2[k,m])
+//                         {
+//                             int temp = array2[k,l];
+//                             array2[k,l] = array2[k,m];
+//                             array2[k,m] = temp;
+//                         }
+//                     }
+//                 }
+//             }
+//             */
 
-//             Console.WriteLine(tableau.Length);
-//             Console.WriteLine(tableau.Rank);
+//             foreach (int value in tableau2)
+//             {
+//                 Console.WriteLine(value);
+//             }
 
-//             Console.WriteLine(tableau2.Rank);
+//             Console.WriteLine("La longueur du tableau a deux dimension est de " +tableau2.Length);
+//             Console.WriteLine("Il s'agit d'un tableau à " +tableau2.Rank+ " dimension(s)");
             
-//         }
+// //         }
         
-//     }
-// }
+// //     }
+// // }
