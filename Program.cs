@@ -7,7 +7,11 @@ namespace Cours_C_
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
                 
+=======
+            
+>>>>>>> Stashed changes
         }
         
     }
