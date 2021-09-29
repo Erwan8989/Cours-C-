@@ -56,7 +56,7 @@ namespace Cours_C_
         {
             int[] tableau = creer();
 
-            remplir(tableau.length);
+            tableau = remplir(tableau.length);
 
             trier(tableau);
 
