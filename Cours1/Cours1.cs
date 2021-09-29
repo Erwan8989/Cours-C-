@@ -16,7 +16,7 @@ namespace Cours_C_
 
             // string Nom = Console.ReadLine();
             
-            Console.WriteLine("Votre nom est : {0} !", Nom);
+            Console.Wr      iteLine("Votre nom est : {0} !", Nom);
 
             //Saisie du prenom
 
