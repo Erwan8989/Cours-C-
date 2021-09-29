@@ -7,15 +7,56 @@ namespace Cours_C_
     {
         static void Main(string[] args)
         {
+            // int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
             
-            StringBuilder c = new StringBuilder();
-            int b = 10;
+            // // Array.Sort(tableau);
+
+            // int longueur = tableau.Length;
+
+            // for (int i = 0; i < longueur - 1; i++){
+            //     for (int j = 0; j < longueur - 1; j++){
+            //         if (tableau[j] > tableau[j+1]){
+            //             int save = tableau[j+1];
+            //             tableau[j+1] = tableau[j];
+            //             tableau[j] = save;
+            //         }
+            //     }                
+            // }
+ 
+            // foreach (int value in tableau){
+            //     Console.WriteLine(value);
+            // }
+
+
+
+            int[,] tableau2 = {{2, 8}, {10, 0}, {20, 5}};
             
-                for (int i = 0; i < b; i++)
-                {   
-                    c.Append("*");
-                    Console.WriteLine(c);
-                }  
+            // Console.WriteLine(tableau2[2,1]);
+
+            // Array.Sort(tableau2);
+            int longueur2 = tableau2.Length;
+
+            for (int i = 0; i <= 2; i++){
+                for (int j = 0; j < 1; j++){
+                    if (tableau2[i, j] > tableau2[i, j+1]){
+                        int save = tableau2[i, j+1];
+                        tableau2[i, j+1] = tableau2[i, j];
+                        tableau2[i, j] = save;
+                    }                    
+                    
+                }    
+                                         
+            } 
+
+            foreach (int value in tableau2)
+            {
+                Console.WriteLine(value);
             }
+
+            Console.WriteLine("La longueur du tableau a deux dimension est de " +tableau2.Length);
+            Console.WriteLine("Il s'agit d'un tableau à " +tableau2.Rank+ " dimension(s)");
+            
         }
+        
     }
+}
