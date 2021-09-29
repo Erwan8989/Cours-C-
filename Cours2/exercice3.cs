@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 // // using System;
 // // using System.Text;
 
@@ -9,18 +8,6 @@
 // //         static void Main(string[] args)
 // //         {
 // //             // int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
-=======
-// using System;
-// using System.Text;
-
-// namespace Cours_C_
-// {
-//     class Program
-//     {
-//         static void Main(string[] args)
-//         {
-//             // int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
->>>>>>> Stashed changes
             
 //             // // Array.Sort(tableau);
 //             // int save;
