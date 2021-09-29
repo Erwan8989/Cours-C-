@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Cours_C_
 {
@@ -255,12 +256,12 @@ namespace Cours_C_
 
             // 2. Peut-on concaténer un entier N à S ?
 
-            string userName = "John";
-            string date = DateTime.Today.ToShortDateString();
+            // string userName = "John";
+            // string date = DateTime.Today.ToShortDateString();
 
-            // Use string interpolation to concatenate strings.
-            string str = $"Hello {userName}. Today is {date}.";
-            System.Console.WriteLine(str);
+            // // Use string interpolation to concatenate strings.
+            // string str = $"Hello {userName}. Today is {date}.";
+            // System.Console.WriteLine(str);
 
             // string Name = "John";
             // int a = 15;
@@ -347,25 +348,112 @@ namespace Cours_C_
             // Les tableaux statiques reçoivent de la mémoire au moment de la compilation et la mémoire est allouée sur la pile. 
             // Alors que les tableaux dynamiques se voient allouer de la mémoire au moment de l'exécution et que la mémoire est allouée à partir du tas.
 
+            // string [] users = new string[3] {"John","Doe","Pipe"};
+            // Console.WriteLine (users);
+
+            double[] valeurs = {0.1, 2.5, 0.6, 0.8, 1.6};
+            //accès indicé
+            Console.WriteLine("Premiere valeur : " + valeurs[0].ToString());
+            Console.WriteLine("Dernière valeur : " +valeurs[4].ToString());
+            //taille du tableau 
+            Console.WriteLine("Taille du tableau : " + valeurs.Length.ToString());
+
+            Console.Write("Appuyez sur n'importe qu'elle touche pour continuer ");
+            Console.ReadKey(true);
+            {
+            //Tableau Dynamique
+                Console.Write("Taille du Tableau :");
+                int n = int.Parse(Console.Readline());
+                //déclaration + initialisation 
+                double [] tab = new double[n];
+                //saisie
+                for (int i = 0; i < tab.Length; i++){
+                    tab[i] = double.Parse(Console.ReadLine());
+                }
+                //affichage 
+                Console.WriteLine("Les valeurs : ");
+                foreach(double v in tab){
+                    Console.WriteLine(v);
+                }
+                Console.WriteLine("Appuie sur n'importe qu'elle touche pour continuer : ");
+                Console.ReadKey(true);
+            }
+        }
+    }
+
+}
+
 
             // 2. Définir un tableau d’entiers dynamique une dimension puis le trier selon l’ordre croissant.
 
-            // int[] x = new int[]   { 1, 2 ,3} ;
+            // int[] x = new int[]   { 12 ,25 ,3} ;
             // Array.Sort(x); // Fonction sort ordonne de manière croissante le code
 
             // foreach(int Value in x)
             // {
             // Console.WriteLine(Value);  
             // }
-
-            // Console.WriteLine("Element at index [0, 0] : " +x [0,0]);
+            // Console.WriteLine("Element at index [0, 0] : " + x[0,1].ToString);
 
             // }
 
             // 3. Définir un tableau deux dimensions d’entiers dynamique puis le trier.
 
+        //     Console.Write ("Taille du tableau : ");
+        //     int n = int.Parse(Console.ReadLine());
+
+        //     // Déclaration + Initialisation
+
+        //     double [] tab = new double[n];
+
+        //     // Saisie 
+        //     for (int i = 0; i < tab.Length; i++) {
+        //         tab[i] = double.Parse (Console.ReadLine());
+        //     }
+
+        //     // Affichage 
+        //     Console.WriteLine ("Les valeurs : ");
+        //     foreach (double v in tab) {
+        //         Console.WriteLine(v);
+        //     }
+
+        //     Console.WriteLine ("Press any key to continue ...");
+        //     Console.ReadKey(true);
+        // }
 
 
+        // int [] tab = new int [];
+
+        // for (int i = 0; i < tab.Length; i++) {
+        //         tab[i] = int.Parse (Console.ReadLine()); }
+
+            // int[,] x = new int [] {12 ,25 ,3};
+            // Array.Sort(x); // Fonction sort ordonne de manière croissante le code
+
+            // foreach(int Value in x)
+            // {
+            // Console.WriteLine(Value);  
+            // }
+            // Console.WriteLine("Element at index [0, 0] : " +x [0,1].ToString);
+
+            // }
+
+
+    // Création d'un tableau en 2D
+    // string [][] noms = new string [2][];
+    // for (int i = 0; i < noms.Length; i++) {
+    //     noms[i] = new string [i + 1];
+    //             // Console.WriteLine(noms [i]);
+    //     }
+    //         // Ouverture lier
+    //         // Initialisation de la deuxième dimension 
+    // for (int i = 0; i < noms.Length; i++) {
+    //     for (int j = 0; j < noms[i].Length; j++) {
+                        
+    //         noms [i][j] = "Valeurs de l'élément : " + i + j;
+    //         Console.WriteLine(noms [i][j]);
+    //     }
+    // }
 
 
             // ****************************** Enoncé 4 :  Testde conditionnelles/Switch/Boucles  **************************************** //
@@ -396,10 +484,10 @@ namespace Cours_C_
 
             // 3. Afficher les entiers de 0 à 15 par pas de 2.
 
-            for(int x=0; x<=15;x+=2){
-                // if(x%2 = 0) continue;
-                /*else*/ Console.WriteLine(x);
-            }
+            // for(int x=0; x<=15;x+=2){
+            //     // if(x%2 = 0) continue;
+            //     /*else*/ Console.WriteLine(x);
+            // }
 
 
 
@@ -460,27 +548,44 @@ namespace Cours_C_
 
 // ****************************** Solution C ********************************** 
 
-            int b, c = 0;
+    //         int b, c = 0;
 
-            Console.WriteLine("Saisir une valeur");
-            int a = int.Parse(Console.ReadLine());  
+    //         Console.WriteLine("Saisir une valeur");
+    //         int a = int.Parse(Console.ReadLine());  
 
-            for(b = 0; b < a;){
-            Console.Write("*");
-            c++;
-                if (c == (a-b)){
-                Console.WriteLine(""); 
-                b++;
-                c = 0;
-                } 
-            }
-            Console.ReadLine();  }
+    //         for(b = 0; b < a;){
+    //         Console.Write("*");
+    //         c++;
+    //             if (c == (a-b)){
+    //             Console.WriteLine(""); 
+    //             b++;
+    //             c = 0;
+    //             } 
+    //         }
+    //         Console.ReadLine();  }
 
-    }
-            
-}
+    
 
+// ****************** 
 
+                // decimal[ , ] tabVentes = new decimal [4, 6]; //4 rangées et 6 colonnes
 
-
+                // //---- Remplir le tableau des ventes --------------------------------
+                // for (int rangee= 0; rangee < tabVentes.GetLength(0); rangee ++)
+                // {
+                // for (int colonne = 0; colonne < tabVentes.GetLength(1); colonne++)
+                // {
+                //     tabVentes[rangee, colonne] = (colonne + 1) * (rangee + 1 ) * 10;
+                //     Console.Write(tabVentes[rangee, colonne] + ":");
+                // }
+                // Console.WriteLine();
+                // }
+                // //--- Calculer la moyenne des ventes -------------------------------
+                // decimal accVentes = 0;
+                // foreach (decimal uneVente in tabVentes)
+                // {
+                // accVentes += uneVente;
+                // }
+                // decimal moyenne = accVentes / tabVentes.Length;
+                // Console.WriteLine("moyenne = " + moyenne); 
 
