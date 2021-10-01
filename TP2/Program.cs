@@ -1,9 +1,9 @@
-﻿using System;
+﻿// using System;
 
-namespace TP2
-{
-    class Program
-    {
+// namespace TP2
+// {
+//     class Program
+//     {
 //         public static void trier(int[] tableau){
 //             int save;
 //             for (int i = 0; i < tableau.Length - 1; i++){
@@ -55,28 +55,58 @@ namespace TP2
 //         }
 
 // *************    Méthode pour un tableau static ***************
-static int[] initTableau(){
 
-              Console.WriteLine("Entrer la taille du tableau");
-              int taille = int.Parse(Console.ReadLine());
-              int [] tab1 = new int [taille];
-              return tab1;
+// static int[] initTableau(){
+
+//               Console.WriteLine("Entrer la taille du tableau");
+//               int taille = int.Parse(Console.ReadLine());
+//               int [] tab1 = new int [taille];
+//               return tab1;
               
-          }
-        static void Main(string[] args)
-        {
-                      
-           int[]tab=initTableau();
+//           }
+//         static void Main(string[] args)
+//         {           
+//            int[]tab=initTableau();
            
-           for(int i = 0; i < tab.Length; i++){
+//            for(int i = 0; i < tab.Length; i++){
+//                tab[i] = i;
+//                Console.WriteLine($"la case {i} du tableau contient une valeur de {tab[i]}");
+//            }    }
+//     }
+// }
 
-               tab[i] = i;
-               Console.WriteLine($"la case {i} du tableau contient une valeur de {tab[i]}");
-           }    }
-    }
-}
 
 
+// static int[] initTableau(){
+//               Console.WriteLine("Entrer la taille du tableau");
+//               int taille = int.Parse(Console.ReadLine());
+//               int [][] tableau = new int [2][];
+              
+//               return tableau;
+              
+//                }
+
+// static void Main(string[] args) {
+
+//     int[][]tableau = initTableau();
+      
+//            for(int i = 0; i < tableau.Length; i++){
+//                initTableau [i] = new string [i + 1];
+
+//                 for(int j = 0; j < tableau.Length; j++){
+//                     initTableau [j] = new string [j + 1];
+
+             
+//                 Console.WriteLine(tableau [i][j]);
+
+                
+//               }
+                
+//            }    }
+//     }
+// }
+
+// }
 
 
 // TEST UNITAIRE : permet de tester un bout de code isolé.
