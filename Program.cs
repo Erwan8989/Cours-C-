@@ -21,16 +21,16 @@ namespace Cours_C_
         
         }
             
-        public static int remplir(int taille){
-            int[] tab = new int[taille];
+        // public static int remplir(int taille){
+        //     int[] tab = new int[taille];
 
-            for (int i = 0; i < taille; i++)
-            {
-                Console.WriteLine("Veuillez entrer une valeur dans le tableau");
-                tab[i] = int.Parse(Console.ReadLine());
-            }
-            return tab;
-        }
+        //     for (int i = 0; i < taille; i++)
+        //     {
+        //         Console.WriteLine("Veuillez entrer une valeur dans le tableau");
+        //         tab[i] = int.Parse(Console.ReadLine());
+        //     }
+        //     return tab;
+        // }
         
         public static void trier(int[] tableau){
             int save;
@@ -56,7 +56,15 @@ namespace Cours_C_
         {
             int[] tableau = creer();
 
-            tableau = remplir(tableau.length);
+            // tableau = remplir(tableau.Length);
+            
+           
+            for (int i = 0; i < tableau.Length; i++)
+            {
+                Console.WriteLine("Veuillez entrer une valeur dans le tableau");
+                tableau[i] = int.Parse(Console.ReadLine());
+            }
+        
 
             trier(tableau);
 
