@@ -1,4 +1,47 @@
-// using System;
+using System;
+
+namespace Palindrome
+{
+      public class Palindrome {
+  
+        public static void Main(string[] args)
+        {
+           
+          string MyString, Reversed=""; 
+
+          Console.Write("S'il vous plaît, veuillez renseigner un mot : ");
+          MyString = (Console.ReadLine());
+
+          for (int i = MyString.Length - 1; i >= 0; i--)  // Initialisation d'une boucle pour avoir la taille de la chaine inversée.
+          {
+            Reversed = Reversed + MyString[i];
+          }    
+          
+                  // Comparaison entre la taille du mot rentrée par l'utilisateur et la taille du mot inversé.
+          if(MyString == Reversed) {    
+            Console.Write("Le mot donnée est un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
+          }
+
+          else {
+          Console.Write("Le mot donnée n'est pas un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
+          }
+
+        }
+      }
+}
+
+// int i = 0;  Valeur i à initialiser pour une condition while
+// Cas pour une boucle while ! 
+          // i = MyString.Length - 1;
+          // while (i >= 0)
+          // {
+          //   Reversed = Reversed + MyString[i];
+          //   i--;
+          // } 
+
+
+// **************************** Vérification d'un chiffre palindrome *****************************
+
 
 // namespace Palindrome
 // {
@@ -6,56 +49,66 @@
 //   {
 //         public static void Main(string[] args)
 //         {
-//           String MyString, Reversed = ""; int i = 0;
-//           Console.Write("Veuillez entrer un mot : ");
-//           MyString = (Console.ReadLine());
+//           int chiffre ,total=0 ,valeur ,sum;
 
-//           i = MyString.Length - 1;
+//           Console.Write("S'il vous plaît, veuillez renseigner un chiffre : ");
+//           chiffre = int.Parse(Console.ReadLine());
+//           valeur = chiffre;
 
-//           while (i >= 0)
-//           {
-//           Reversed = Reversed + MyString[i];
-//           i--;
-//           }
+//         while(chiffre > 0)
+//         {
+//           sum = chiffre % 10;
+//           total = (total * 10) + sum;
+//           chiffre = chiffre / 10;
+//         }
 
-//         if(MyString == Reversed)
-//            Console.Write("The given word is Palindrome.");
+//         if(valeur == total)
+//            Console.Write("Le chiffre donnée est un Palindrome.");
 //         else
-//         Console.Write("The given word is not Palindrome");
-//     } 
+//        Console.Write("Le chiffre donnée n'est pas un Palindrome.");
+//       } 
+//   }
 // }
 
 
-// }
+// ************************************************************************************************************************************************
 
 // using System;
 
-// namespace Palindrome {
-  
-//   public class Palindrome {
+// namespace Palindrome
+// {
+//     class Demo 
+    
+//     {
+//         static void Main() 
+        
+//         {
+//           string Machaine, Reversed;
+//           int longueur;
 
-//     public static void Main(string[] args) {
+//           Machaine = "Tom";
+//           Reversed ="";
 
-//       string MyString, Reversed="";
-
-//       Console.Write("S'il vous plaît,veuillez renseigner un mot:");
-//       MyString=(Console.ReadLine());
-
-//       // Initialisation d'une boucle pour avoir la taille de la chaine inversée.
-//       for(int i = MyString.Length - 1; i >= 0; i--) 
-//       {                                                     
-//       Reversed = Reversed + MyString[i];   
-//       }
-
-//       //Comparaison entre la taille du mot rentrée par l'utilisateur et la taille du mot inversé.
-//       if(MyString == Reversed){
-//       Console.Write("Le mot donnée est un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1}",MyString ,Reversed ); }
-//       else{
-//       Console.Write("Le mot donnée n'est pas un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1}",MyString,Reversed); }
+//           Console.WriteLine("String is {0}", Machaine);
+//           // find string length
           
+//           longueur = Machaine.Length - 1;
+          
+//           while (longueur >= 0) 
+//           {
+//             Reversed = Reversed + Machaine[longueur];
+//             longueur--;
 //           }
-//           }
-//           }
+
+//           Console.WriteLine("Reversed String is {0}", Reversed);
+//           Console.ReadLine();
+//         }
+//     }
+// }
+
+
+
+// ************************************************************************************************************************************************
 
 
 // using System;
