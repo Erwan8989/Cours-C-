@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj": {}
+    "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj": {
+    "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj",
+        "projectUniqueName": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj",
         "projectName": "Lib",
-        "projectPath": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\obj\\",
+        "projectPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\Lib.csproj",
+        "packagesPath": "C:\\Users\\Jérémy\\.nuget\\packages\\",
+        "outputPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\Tests_Unitaires\\Sources\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jérémy\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
