@@ -5,21 +5,21 @@ namespace Cours_C_
 {
     class Program
     {
-        public static int[] creer(){
+        // public static int[] creer(){
 
-            Console.WriteLine("Veuillez saisir la taille d'un tableau");
-            int taille = int.Parse(Console.ReadLine());
+        //     Console.WriteLine("Veuillez saisir la taille d'un tableau");
+        //     int taille = int.Parse(Console.ReadLine());
         
-            while (taille <= 0 )
-            {
-                Console.WriteLine("Veuillez saisir la taille d'un tableau");
-                taille = int.Parse(Console.ReadLine());
-            }
+        //     while (taille <= 0 )
+        //     {
+        //         Console.WriteLine("Veuillez saisir la taille d'un tableau");
+        //         taille = int.Parse(Console.ReadLine());
+        //     }
 
-            int[] tab = new int[taille];
-            return tab;
+        //     int[] tab = new int[taille];
+        //     return tab;
         
-        }
+        // }
             
         // public static int remplir(int taille){
         //     int[] tab = new int[taille];
@@ -32,6 +32,8 @@ namespace Cours_C_
         //     return tab;
         // }
         
+
+        /* tableau
         public static void trier(int[] tableau){
             int save;
             for (int i = 0; i < tableau.Length - 1; i++){
@@ -51,9 +53,10 @@ namespace Cours_C_
                 Console.WriteLine(value);
             }
         }
-
+        */
         static void Main(string[] args)
         {
+            /*
             int[] tableau = creer();
 
             // tableau = remplir(tableau.Length);
@@ -70,7 +73,7 @@ namespace Cours_C_
 
             afficher(tableau);
             
-
+    */
 
             // int[,] tableau2 = {{2, 8}, {10, 0}, {20, 5}};
             
@@ -116,7 +119,96 @@ namespace Cours_C_
             // Console.WriteLine("La longueur du tableau a deux dimension est de " +tableau2.Length);
             // Console.WriteLine("Il s'agit d'un tableau à " +tableau2.Rank+ " dimension(s)");
             
-        }
+        // }
+
+
+
+
+        Service salle1 = new Service();
+
+        // 12 étudiant prennent une ressource chacun
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+        salle1.PriseRessource();
+
+        // On retourne le nombre de ressource restante
+        Console.WriteLine("Nombre de ressource restante : " +salle1.RessourcesLibres());
         
+
+        // Quetre étudiants rendent des ressources
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+
+        // On retourne le nombre de ressource restante
+        Console.WriteLine("Nombre de ressource restante : " +salle1.RessourcesLibres());
+
+        // Tous les étudiants quittent la salle et rendent les ressources
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+        salle1.RendreRessource();
+
+        // On retourne le nombre de ressource restante
+        Console.WriteLine("Nombre de ressource restante : " +salle1.RessourcesLibres());
+
+        // Un étudiant tente de rendre une ressource, alors qu'aucune n'est prise
+        salle1.RendreRessource();
+
+    }
+
+        class Service {
+            private int NbRessourcesLibres;
+            private int NbRessourcesOccupées;
+
+            public Service(){
+                NbRessourcesLibres = 20;
+                NbRessourcesOccupées = 0;
+            }
+
+            public void PriseRessource(){
+                
+
+                if (NbRessourcesLibres == 0)
+                {
+                    Console.WriteLine("Toutes les ressources sont déjà prises !");
+                }
+                else
+                {
+                    NbRessourcesOccupées++;
+                    NbRessourcesLibres--;
+                }
+            }
+
+            public void RendreRessource(){
+                if (NbRessourcesOccupées == 0)
+                {
+                    Console.WriteLine("Aucune ressource à rendre !");
+                }
+                else
+                {
+                    NbRessourcesOccupées--;
+                    NbRessourcesLibres++;
+                }
+            }
+
+            public int RessourcesLibres(){
+                return this.NbRessourcesLibres;
+            }
+        }
     }
 }
