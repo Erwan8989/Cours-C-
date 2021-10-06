@@ -9,10 +9,8 @@ using System;
             private string Nom;
             private string Prenom;
 
-            public string Student() // Constructeur vide
-            {}
 
-            public void Student(int note, string nom, string prenom)
+            public Etudiant(int note, string nom, string prenom)
             {
                 this.Note = note;
                 this.Nom = nom;
@@ -23,15 +21,15 @@ using System;
             // Création des getters
 
             public int get_note () {
-                return Note;
+                return this.Note;
             }
 
-            public int get_nom () {
-                return Nom;
+            public string get_nom () {
+                return this.Nom;
             }
 
-            public int get_prenom () {
-                return Prenom;
+            public string get_prenom () {
+                return this.Prenom;
             }
 
             // Définiton des Setters
