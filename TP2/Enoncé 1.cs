@@ -9,14 +9,24 @@ namespace TP2
         {
             console.WriteLine ("Helloworld");
             Services Salle1 = new Services(15);
+            // Salle1 est un objet instance de la classe Service
+            Salle1.afficherRessources();
+            Salle1.PriseRessources(2);     // prise de 2 pc
+            Salle1.afficherRessources();
+            Salle1.PriseRessources(12);
+            Salle1.afficherRessources();
+            Salle1.PriseRessources(1);  
+            Salle1.RendreRessources(15);
             Salle1.afficher_Ressources();
 
+            Services Salle_apple = new Services (10);
+            Salle_apple.afficherRessources();
+            Salle_apple.PriseRessources(15);
         // Déclaration et création des objets de classe Ressources
                   
         } 
     }
 
-    
     // Déclaration de la classe Service 
     class Services {
         
@@ -27,16 +37,16 @@ namespace TP2
 
         // Déclaration du ou des constructeurs
 
-        public service (){
+        public int service (){
         }
 
         // Constructeurs pas paramètres
-        public service (int nbrl) {
+        public int service (int nbrl) {
             this.nbRessourcesLibres=nbrl;
             this.nbRessourcesOccupées=0;
         }
 
-        public service (int nbrl, int nbro) {
+        public int service (int nbrl, int nbro) {
             this.nbRessourcesLibres=nmrl;
             this.nbRessourcesOccupées=nbro;
         }
@@ -67,38 +77,37 @@ namespace TP2
         public void PriseRessources (int nb) {
             if (get_nbRessourcesLibres() >=nb) {
                 nbRessourcesLibres -= nb;
-                nbRessourcesOccupées =+ nb;
+                nbRessourcesOccupées += nb;
             }
 
             else {
                 console.WriteLine("Plus de ressources disponibles...");
-            }
-        
+            }      
         }
 
         // Doit passer par une méthode public pour faire appel à une méthode privée
 
         public void RendreRessources (int nb) {
             if (get_nbRessourcesOccupées () >= nb) {
-                nbRessourcesLibres =+ nb;
+                nbRessourcesLibres += nb;
                 nbRessourcesOccupées -= nb;
             }
             else {
                 console.WriteLine("Plus de ressources occupées...");
             }
 
-            public int RessourcesLibres () {
-                return nbRessourcesLibres;
-            } 
-
-            public void afficher_Ressources () {
-                console.WriteLine("Nombre de ressources libres " + get_nbRessourcesLibres());
-                console.WriteLine("Nombre de ressources occupées " + get_nbRessourcesOccupées());
+            // public int RessourcesLibres () {
+            //     return nbRessourcesLibres;
+            // } 
             }
 
-        }
+        public void afficherRessources () {
+            console.WriteLine("Nombre de ressources libres " + get_nbRessourcesLibres());
+            console.WriteLine("Nombre de ressources occupées " + get_nbRessourcesOccupées());
+        } 
 
-        }
     }
+}
+    
 
     
