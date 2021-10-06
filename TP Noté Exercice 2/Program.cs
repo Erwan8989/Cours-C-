@@ -6,7 +6,7 @@ namespace TP_Noté_Exercice_2
     {
         static void Main(string[] args)
         {
-            Etudiant eleve1 = new Etudiant("John", "Doe", 18); // instanciation de la classe Etudiant, en passant en paramètre le nom, prénom et la note
+            Etudiant eleve1 = new Etudiant("John", "Doe", 18); // instanciation de la classe Etudiant, en passant en paramètre le nom, le prénom et la note
 
             Console.WriteLine("L'élève " + eleve1.getPrenom() + " " + eleve1.getNom() + " a eu " + eleve1.getNote() + " sur 20"); // Appel de méthodes de la classe Etudiant pour afficher le nom, prenom et la note
             
