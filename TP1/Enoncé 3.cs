@@ -1,13 +1,13 @@
-using System;
-using System.Text;
-using System.Collections.Generic;
+// using System;
+// using System.Text;
+// using System.Collections.Generic;
 
-namespace Cours_C_
-{
-    class Enonce3
-    {
-          static void Main(string[] args)
-        { 
+// namespace Cours_C_
+// {
+//     class Enonce3
+//     {
+//           static void Main(string[] args)
+//         { 
             
 // //             ****************************** Enoncé 3 :  Traitement de tableaux  **************************************** //
 
@@ -78,23 +78,23 @@ namespace Cours_C_
 
     // Création d'un tableau en 2D
     
-    string [][] noms = new string [3][];
+//     string [][] noms = new string [3][];
             
-            // Initialisation de la deuxième dimension 
-    for (int i = 0; i < noms.Length; i++) {
-        noms[i] = new string [i + 1];
-        for (int j = 0; j < noms[i].Length; j++) {
-            noms[j] = new string [j + 1];   
+//             // Initialisation de la deuxième dimension 
+//     for (int i = 0; i < noms.Length; i++) {
+//         noms[i] = new string [i + 1];
+//         for (int j = 0; j < noms[i].Length; j++) {
+//             noms[j] = new string [j + 1];   
                  
-            noms [i][j] = "Valeurs de l'élément : " + i + j;
-            Console.WriteLine(noms [i][j]);
-        } }
-        }
-    }
-}
+//             noms [i][j] = "Valeurs de l'élément : " + i + j;
+//             Console.WriteLine(noms [i][j]);
+//         } }
+//         }
+//     }
+// }
 
 
-// // *****************************************  Code d'Adam  **************************************
+// // *****************************************  Exo 3 et 4 (code adam) **************************************
 
 
 //             int[,] array2 = new int[,] {{1, 69, 54, 82, 856}, {203, 365, 5, 154 , 515}};
@@ -151,3 +151,111 @@ namespace Cours_C_
 //              Console.WriteLine("Le tableau est de " + array2.Rank + " dimension, sa taille est de R = " + rowLength + "  C = " + colLength);
 
 
+// ************* Trie de tableaux static et dynamique **************************************
+
+// public static void trier(int[] tableau){
+        //     int save;
+        //     for (int i = 0; i < tableau.Length - 1; i++){
+        //         for (int j = 0; j < tableau.Length - 1; j++){  
+        //             if (tableau[j] > tableau[j+1]){
+        //                 save = tableau[j+1];
+        //                 tableau[j+1] = tableau[j];
+        //                 tableau[j] = save;
+        //             }
+        //         }                
+        //     }
+        // }
+
+        // public static void afficher(int[] tableau){
+        //     foreach (int value in tableau){
+        //         Console.WriteLine(value);
+        //     }
+        // }
+        // static void Main(string[] args)
+        // {
+        //     int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
+        //     trier(tableau);
+        //     afficher(tableau);
+            
+        // }
+//     }
+// }
+
+// static void Main(string[] args) {
+
+//         int[] tableau = new int[] {2, 8, 7, 54, 10, 0};
+
+//         int save;
+//             for (int i = 0; i < tableau.Length - 1; i++){
+//                 for (int j = 0; j < tableau.Length - 1; j++){
+                   
+//                     if (tableau[j] > tableau[j+1]){
+//                         save = tableau[j+1];
+//                         tableau[j+1] = tableau[j];
+//                         tableau[j] = save;
+//                     }
+//                 }                
+//             }
+        
+
+//           foreach (int value in tableau){
+//                 Console.WriteLine(value);
+//             }
+//         }
+
+// ******************************    Méthode pour un tableau static     ***********************************
+
+// static int[] initTableau(){
+
+//               Console.WriteLine("Entrer la taille du tableau");
+//               int taille = int.Parse(Console.ReadLine());
+//               int [] tab1 = new int [taille];
+//               return tab1;
+              
+//           }
+//         static void Main(string[] args)
+//         {           
+//            int[]tab=initTableau();
+           
+//            for(int i = 0; i < tab.Length; i++){
+//                tab[i] = i;
+//                Console.WriteLine($"la case {i} du tableau contient une valeur de {tab[i]}");
+//            }    }
+//     }
+// }
+
+// *********************   Modèle pour un tableau dynamique  ( pas terminé ) ******************************
+
+// static int[] initTableau(){
+//               Console.WriteLine("Entrer la taille du tableau");
+//               int taille = int.Parse(Console.ReadLine());
+//               int [][] tableau = new int [2][];
+              
+//               return tableau;
+              
+//                }
+
+// static void Main(string[] args) {
+
+//     int[][]tableau = initTableau();
+      
+//            for(int i = 0; i < tableau.Length; i++){
+//                initTableau [i] = new string [i + 1];
+
+//                 for(int j = 0; j < tableau.Length; j++){
+//                     initTableau [j] = new string [j + 1];
+
+             
+//                 Console.WriteLine(tableau [i][j]);
+
+                
+//               }
+                
+//            }    }
+//     }
+// }
+
+// }
+
+
+// TEST UNITAIRE : permet de tester un bout de code isolé.
