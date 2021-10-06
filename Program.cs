@@ -181,8 +181,6 @@ namespace Cours_C_
             }
 
             public void PriseRessource(){
-                
-
                 if (NbRessourcesLibres == 0)
                 {
                     Console.WriteLine("Toutes les ressources sont déjà prises !");
