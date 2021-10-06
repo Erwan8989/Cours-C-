@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\erwan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\TP2\\TP2.csproj",
+      "projectUniqueName": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\TP2\\TP2.csproj",
       "projectName": "TP2",
-      "projectPath": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\TP2\\TP2.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\Cours B2 2021-2022\\Langage C#\\Exercice\\Cours-C-\\TP2\\obj\\",
+      "projectPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\TP2\\TP2.csproj",
+      "packagesPath": "C:\\Users\\erwan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erwan\\OneDrive\\Documents\\EPSI\\B2\\Cours\\C #\\Cours_C#\\TP2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\erwan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

@@ -30,3 +30,19 @@ C:\Users\Admin\Documents\Cours B2 2021-2022\Langage C#\Exercice\Cours-C-\TP2\obj
 C:\Users\Admin\Documents\Cours B2 2021-2022\Langage C#\Exercice\Cours-C-\TP2\obj\Debug\net5.0\ref\TP2.dll
 C:\Users\Admin\Documents\Cours B2 2021-2022\Langage C#\Exercice\Cours-C-\TP2\obj\Debug\net5.0\TP2.pdb
 C:\Users\Admin\Documents\Cours B2 2021-2022\Langage C#\Exercice\Cours-C-\TP2\obj\Debug\net5.0\TP2.genruntimeconfig.cache
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.csproj.AssemblyReference.cache
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.AssemblyInfoInputs.cache
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.AssemblyInfo.cs
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.csproj.CoreCompileInputs.cache
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.dll
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\ref\TP2.dll
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.pdb
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.exe
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.deps.json
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.runtimeconfig.json
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.runtimeconfig.dev.json
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.dll
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\ref\TP2.dll
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\bin\Debug\net5.0\TP2.pdb
+C:\Users\erwan\OneDrive\Documents\EPSI\B2\Cours\C #\Cours_C#\TP2\obj\Debug\net5.0\TP2.genruntimeconfig.cache
