@@ -13,7 +13,7 @@ namespace TP_Noté_Exercice_2
         }
     }
 
-    class Etudiant
+    class Etudiant // Création de la classe étudiant
     {   
         // Création des attributs de la classe
         private string nomEtudiant;
