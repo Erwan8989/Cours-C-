@@ -7,6 +7,8 @@
 //     class Enonce5
 //     {
 
+    //************************* Notion de méthodes et appels ****************
+
 //         private static string Concaténer(string x, string y) { // static : méthode unique non liée à un objet 
 //         return x + y; }
 
