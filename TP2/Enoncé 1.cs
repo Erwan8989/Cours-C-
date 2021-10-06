@@ -1,102 +1,104 @@
-﻿// using System;
+﻿using System;
 
-// namespace TP2
-// {
-//     class program 
-//     {
+namespace TP2
+{
+    class program 
+    {
 
-//         static void Main(string[] args)
-//         {
-//             console.WriteLine ("Helloworld");
+        static void Main(string[] args)
+        {
+            console.WriteLine ("Helloworld");
+            Services Salle1 = new Services(15);
+            Salle1.afficher_Ressources();
 
-//         // Déclaration et création des objets de classe Ressources
+        // Déclaration et création des objets de classe Ressources
                   
-//         } 
-//     }
+        } 
+    }
 
     
-//     // Déclaration de la classe Service 
-//     class Services {
+    // Déclaration de la classe Service 
+    class Services {
         
-//         // Déclaration des attributs ou bien des caractéristiques des objets
-//         // En privés, sécurisés avec accès via get et set
-//         private int nbRessourcesLibres;
-//         private int nbRessourcesOccupées;
+        // Déclaration des attributs ou bien des caractéristiques des objets
+        // En privés, sécurisés avec accès via get et set
+        private int nbRessourcesLibres;
+        private int nbRessourcesOccupées;
 
-//         // Déclaration du ou des constructeurs
+        // Déclaration du ou des constructeurs
 
-//         public service (){
-//         }
+        public service (){
+        }
 
-//         // Constructeurs pas paramètres
-//         public service (int nbrl) {
-//             this.nbRessourcesLibres=nbrl;
-//             this.nbRessourcesOccupées=0;
-//         }
+        // Constructeurs pas paramètres
+        public service (int nbrl) {
+            this.nbRessourcesLibres=nbrl;
+            this.nbRessourcesOccupées=0;
+        }
 
-//         public service (int nbrl, int nbro) {
-//             this.nbRessourcesLibres=nmrl;
-//             this.nbRessourcesOccupées=nbro;
-//         }
+        public service (int nbrl, int nbro) {
+            this.nbRessourcesLibres=nmrl;
+            this.nbRessourcesOccupées=nbro;
+        }
 
-//         // getters pour la lecture et accès aux attributs en private :fonctions.
+        // getters pour la lecture et accès aux attributs en private :fonctions.
 
-//         public int get_nbRessourcesLibres() {
-//             return nbRessourcesLibres;
-//         }
+        public int get_nbRessourcesLibres() {
+            return nbRessourcesLibres;
+        }
 
-//         public int get_nbRessourcesOccupées() {
-//             return nbRessourcesOccupées;
-//         }
+        public int get_nbRessourcesOccupées() {
+            return nbRessourcesOccupées;
+        }
 
-//         // Setters pour modifier les attributs en private 
+        // Setters pour modifier les attributs en private 
 
-//         public void set_nbRessourcesLibres(int nb) { // nb > 0
-//             this.nbRessourcesLibres=nb;
-//         }
+        public void set_nbRessourcesLibres(int nb) { // nb > 0
+            this.nbRessourcesLibres=nb;
+        }
 
-//         public void set_nbRessourcesOccupées(int nb) { // nb > 0
-//             this.nbRessourcesOccupées=nb;
-//         }
+        public void set_nbRessourcesOccupées(int nb) { // nb > 0
+            this.nbRessourcesOccupées=nb;
+        }
 
 
-//         // Déclaration des méthodes diverses
+        // Déclaration des méthodes diverses
 
-//         public void PriseRessources (int nb) {
-//             if (get_nbRessourcesLibres() >=nb) {
-//                 nbRessourcesLibres =- nb;
-//                 nbRessourcesOccupées =+ nb;
-//             }
+        public void PriseRessources (int nb) {
+            if (get_nbRessourcesLibres() >=nb) {
+                nbRessourcesLibres -= nb;
+                nbRessourcesOccupées =+ nb;
+            }
 
-//             else {
-//                 console.WriteLine("Plus de ressources disponibles...");
-//             }
+            else {
+                console.WriteLine("Plus de ressources disponibles...");
+            }
         
-//         }
+        }
 
-//         // Doit passer par une méthode public pour faire appel à une méthode privée
+        // Doit passer par une méthode public pour faire appel à une méthode privée
 
-//         public void RendreRessources (int nb) {
-//             if (get_nbRessourcesOccupées () >= nb) {
-//                 nbRessourcesLibres =+ nb;
-//                 nbRessourcesOccupées =- nb;
-//             }
-//             else {
-//                 console.WriteLine("Plus de ressources occupées...");
-//             }
+        public void RendreRessources (int nb) {
+            if (get_nbRessourcesOccupées () >= nb) {
+                nbRessourcesLibres =+ nb;
+                nbRessourcesOccupées -= nb;
+            }
+            else {
+                console.WriteLine("Plus de ressources occupées...");
+            }
 
-           /* // public int RessourcesLibres () {
-            //     return nbRessourcesLibres;
-            // } */
+            public int RessourcesLibres () {
+                return nbRessourcesLibres;
+            } 
 
-//             public void afficher_Ressources () {
-//                 console.WriteLine("Nombre de ressources libres " + get_nbRessourcesLibres());
-//                 console.WriteLine("njombre de ressources occupées " + get_nbRessourcesOccupées());
-//             }
+            public void afficher_Ressources () {
+                console.WriteLine("Nombre de ressources libres " + get_nbRessourcesLibres());
+                console.WriteLine("Nombre de ressources occupées " + get_nbRessourcesOccupées());
+            }
 
-//         }
+        }
 
-//         }
-//     }
+        }
+    }
 
     
