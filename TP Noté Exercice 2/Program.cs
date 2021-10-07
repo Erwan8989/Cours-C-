@@ -5,20 +5,28 @@ namespace TP_Noté_Exercice_2
 
     class TabEtudiant
     {
-        string [] tableauEtudiant; 
+        static string [,] tableauEtudiant = tableauEtudiant = new string [31,3]; //Créatin du tableau en static afin d'avoir un tableau commun à tous les objets
+        public TabEtudiant(){}
 
-        public void initTableau(){ // Fonction qui initialise le tableau
-            tableauEtudiant = new string [(Etudiant.getNbEtudiant()) +1]; // Le +1 permet d'ajouter une taille supplémentaire au tableau permettant d'associer la clé 1 pour l'élève1, et non pas 0 pour l'élève1. 
-        }
+        
+
+        // public void initTableau(){ // Fonction qui initialise le tableau
+            
+        // }
 
 
-       public void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau
-           initTableau();
-           tableauEtudiant[Etudiant.getNbEtudiant()] = E.getPrenom();
+       public static void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau avec son nom, prenom et note
+           tableauEtudiant[Etudiant.getNbEtudiant(),0] = E.getPrenom();
+           tableauEtudiant[Etudiant.getNbEtudiant(),1] = E.getNom();
+           tableauEtudiant[Etudiant.getNbEtudiant(),2] = (E.getNote()).ToString();
+           
        }
 
-       public string getTableau(int id){ // Fonction qui permet de retourner le nom d'un étudiant selon sa clé dans le tableau
-           return this.tableauEtudiant[id];
+       public void getTableauAll(int id){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
+           for (int i = 0; i <= 2; i++)
+           {
+               Console.WriteLine(tableauEtudiant[id, i]);
+           }
        }
     }
 
@@ -64,9 +72,9 @@ namespace TP_Noté_Exercice_2
 
             Console.WriteLine("L'élève " + eleve1.getPrenom() + " " + eleve1.getNom() + " a eu " + eleve1.getNote() + " sur 20");
 
-            eleve1.ajouter(eleve1); // Ajoute l'élève au tableau
+            TabEtudiant.ajouter(eleve1); // Ajoute l'élève au tableau
 
-            Console.WriteLine(eleve1.getTableau(1)); // Afficher son prenom depuis le tableau
+            eleve1.getTableauAll(1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau      
 
 
             
@@ -74,9 +82,9 @@ namespace TP_Noté_Exercice_2
 
             Console.WriteLine("L'élève " + eleve2.getPrenom() + " " + eleve2.getNom() + " a eu " + eleve2.getNote() + " sur 20");
 
-            eleve2.ajouter(eleve2); // Ajoute l'élève au tableau
+            TabEtudiant.ajouter(eleve2); // Ajoute l'élève au tableau
 
-            Console.WriteLine(eleve2.getTableau(2)); // Afficher son prenom depuis le tableau
+            eleve2.getTableauAll(2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau        
 
         }
     }
