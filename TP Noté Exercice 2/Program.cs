@@ -5,7 +5,7 @@ namespace TP_Noté_Exercice_2
 
     class TabEtudiant
     {
-        static string [,] tableauEtudiant = tableauEtudiant = new string [31,3]; //Créatin du tableau en static afin d'avoir un tableau commun à tous les objets
+        static string [,] tableauEtudiant = tableauEtudiant = new string [30,3]; //Créatin du tableau en static afin d'avoir un tableau commun à tous les objets
         public TabEtudiant(){}
 
         
@@ -23,10 +23,8 @@ namespace TP_Noté_Exercice_2
        }
 
        public void getTableauAll(int id){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
-           for (int i = 0; i <= 2; i++)
-           {
-               Console.WriteLine(tableauEtudiant[id, i]);
-           }
+            Console.WriteLine("L'étudiant avec l'ID " + id + " s'appelle " + tableauEtudiant[id, 0] + " " + tableauEtudiant[id, 1] + " et a comme note : " + tableauEtudiant[id, 2] + "/20");
+           
        }
     }
 
@@ -70,8 +68,6 @@ namespace TP_Noté_Exercice_2
         {
             Etudiant eleve1 = new Etudiant("John", "Doe", 18); // Instantiation de la classe étudiant avec l'objet eleve1
 
-            Console.WriteLine("L'élève " + eleve1.getPrenom() + " " + eleve1.getNom() + " a eu " + eleve1.getNote() + " sur 20");
-
             TabEtudiant.ajouter(eleve1); // Ajoute l'élève au tableau
 
             eleve1.getTableauAll(1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau      
@@ -79,8 +75,6 @@ namespace TP_Noté_Exercice_2
 
             
             Etudiant eleve2 = new Etudiant("Pierre", "Durant", 20); // Instantiation de la classe étudiant avec l'objet eleve1 
-
-            Console.WriteLine("L'élève " + eleve2.getPrenom() + " " + eleve2.getNom() + " a eu " + eleve2.getNote() + " sur 20");
 
             TabEtudiant.ajouter(eleve2); // Ajoute l'élève au tableau
 
