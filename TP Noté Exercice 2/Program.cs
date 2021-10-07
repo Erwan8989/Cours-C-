@@ -19,64 +19,9 @@ namespace TP_Noté_Exercice_2
            tableauEtudiant[E.getIdEtudiant(),0] = E.getPrenom();
            tableauEtudiant[E.getIdEtudiant(),1] = E.getNom();
            tableauEtudiant[E.getIdEtudiant(),2] = (E.getNote()).ToString();
-
-            for (int i = 1; i <= 5; i++)
-            {
-                if (tableauEtudiant[i+1, 2] == null)
-                {
-                    Console.WriteLine("Continue");
-                }
-                else{
-                    Console.WriteLine("Nom dans tableau avant: " + tableauEtudiant[i, 0] +  tableauEtudiant[i+1, 0]);
-                    Console.WriteLine("Entre dans condition1");
-                    string prenom1 = tableauEtudiant[i, 0];
-                    string prenom2 = tableauEtudiant[i+1, 0];
-
-                    Console.WriteLine(prenom1 + prenom2);
-
-                    string nom1 = tableauEtudiant[i, 1];
-                    string nom2 = tableauEtudiant[i+1, 1];
-
-                    int valeur1 = int.Parse(tableauEtudiant[i, 2]);
-                    int valeur2 = int.Parse(tableauEtudiant[i+1, 2]);
-
-                    
-
-                    // Console.WriteLine(valeur1);
-                    if (valeur1 < valeur2){
-                        Console.WriteLine("Entre dans condition");
-                        int save = valeur1;
-                        valeur1 = valeur2;
-                        valeur2 = save;
-
-                        string valeur1_string = valeur1.ToString();
-                        string valeur2_string = valeur2.ToString();
-
-                        valeur1_string = tableauEtudiant[i+1, 2];
-                        valeur2_string = tableauEtudiant[i, 2];
-
-                        tableauEtudiant[i, 0] = prenom2;
-                        tableauEtudiant[i+1, 0] = prenom1;
-
-                        Console.WriteLine("Nom dans tableau : " + tableauEtudiant[i, 0] +  tableauEtudiant[i+1, 0]);
-
-                        tableauEtudiant[i, 1] = nom2;
-                        tableauEtudiant[i+1, 1] = nom1;
-
-                        // i=1;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Sortie de condition");
-                        i++;
-                    }
-                    
-                }
-                
-
-                 
+       
             }
-       }
+    
 
        public void getTableauAll(Etudiant E){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
             int id = E.getIdEtudiant(); // Récupération de l'ID de l'étudiant pour l'identifier dans le tableau
@@ -84,9 +29,55 @@ namespace TP_Noté_Exercice_2
            
        }
 
-    //    public void trierTableau(){
-    //        Array.sort(tableauEtudiant);
-    //    }
+       public void trierTableau(){
+            for (int i = 1; i < 5; i++)
+            {
+                    if (tableauEtudiant[i+1, 2] == null){
+                        i = 6;
+                    }
+                    else
+                    {  
+                    for (int j = 2; j < 5; j++){
+                        if (tableauEtudiant[j, 2] == null)
+                        {
+                            j = 100;
+                        }
+                        else{ 
+
+                            string prenom1 = tableauEtudiant[i, 0];
+                            string prenom2 = tableauEtudiant[j, 0];
+
+                            string nom1 = tableauEtudiant[i, 1];
+                            string nom2 = tableauEtudiant[j, 1];
+
+                            int valeur1 = int.Parse(tableauEtudiant[i, 2]);
+                            int valeur2 = int.Parse(tableauEtudiant[j, 2]);
+
+                            if (valeur1 < valeur2){
+
+                                int save = valeur1;
+                                valeur1 = valeur2;
+                                valeur2 = save;
+
+                                string valeur1_string = valeur1.ToString();
+                                string valeur2_string = valeur2.ToString();
+                                
+                                tableauEtudiant[i, 2] = valeur1_string;
+                                tableauEtudiant[j, 2] = valeur2_string;
+
+                                tableauEtudiant[i, 0] = prenom2;
+                                tableauEtudiant[j, 0] = prenom1;
+
+                                tableauEtudiant[i, 1] = nom2;
+                                tableauEtudiant[j, 1] = nom1;
+                            }
+                        }
+                    }
+
+                }
+                
+            }
+       }
     }
 
     class Etudiant : TabEtudiant // Classe fille Etudiant, qui hérite de Tab Etudiant
@@ -141,7 +132,7 @@ namespace TP_Noté_Exercice_2
 
 
             
-            Etudiant eleve2 = new Etudiant("Pierre", "Durant", 12); // Instantiation de la classe étudiant avec l'objet eleve1 
+            Etudiant eleve2 = new Etudiant("Pierre", "Durant", 20); // Instantiation de la classe étudiant avec l'objet eleve1 
 
             TabEtudiant.ajouter(eleve2); // Ajoute l'élève au tableau     
 
@@ -150,7 +141,7 @@ namespace TP_Noté_Exercice_2
             // eleve2.getTableauAll(eleve1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
 
 
-            Etudiant eleve3 = new Etudiant("Toto", "Dupont", 11); // Instantiation de la classe étudiant avec l'objet eleve1 
+            Etudiant eleve3 = new Etudiant("Toto", "Dupont", 15); // Instantiation de la classe étudiant avec l'objet eleve1 
 
             TabEtudiant.ajouter(eleve3); // Ajoute l'élève au tableau    
 
@@ -159,6 +150,7 @@ namespace TP_Noté_Exercice_2
             eleve2.getTableauAll(eleve2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
             eleve3.getTableauAll(eleve3); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
             
+            eleve1.trierTableau();
             
             Console.WriteLine(TabEtudiant.tableauEtudiant[1, 0] + TabEtudiant.tableauEtudiant[1, 1] + TabEtudiant.tableauEtudiant[1, 2]);
             Console.WriteLine(TabEtudiant.tableauEtudiant[2, 0] + TabEtudiant.tableauEtudiant[2, 1] + TabEtudiant.tableauEtudiant[2, 2]);
