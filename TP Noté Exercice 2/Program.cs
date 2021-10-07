@@ -5,7 +5,7 @@ namespace TP_Noté_Exercice_2
 
     class TabEtudiant
     {
-        public static string [,] tableauEtudiant = tableauEtudiant = new string [30,3]; //Création du tableau en static afin d'avoir un tableau commun à tous les objets
+        public static string [,] tableauEtudiant = tableauEtudiant = new string [30,3]; // Création du tableau en static afin d'avoir un tableau commun à tous les objets
         public TabEtudiant(){}
 
         
@@ -29,46 +29,47 @@ namespace TP_Noté_Exercice_2
            
        }
 
-       public void trierTableau(){
+       public void trierTableau(){  // Fonction qui va permettre de trier les élèves par ordre croissant selon leur note
             for (int i = 1; i < 5; i++)
             {
-                    if (tableauEtudiant[i+1, 2] == null){
-                        i = 6;
+                    if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
+                        break;
                     }
                     else
                     {  
                     for (int j = 2; j < 5; j++){
-                        if (tableauEtudiant[j, 2] == null)
+                        if (tableauEtudiant[j, 2] == null) // Condition qui permet de ne pas sortir des limites du tableau
                         {
-                            j = 100;
+                            break;
                         }
                         else{ 
 
-                            string prenom1 = tableauEtudiant[i, 0];
+                            string prenom1 = tableauEtudiant[i, 0]; // Stockage des prenoms dans une variable
                             string prenom2 = tableauEtudiant[j, 0];
 
-                            string nom1 = tableauEtudiant[i, 1];
+                            string nom1 = tableauEtudiant[i, 1]; // Stockage des noms dans une variable
                             string nom2 = tableauEtudiant[j, 1];
 
-                            int valeur1 = int.Parse(tableauEtudiant[i, 2]);
+                            int valeur1 = int.Parse(tableauEtudiant[i, 2]); // Stockage des notes dans une variable. Conversion d'une chaine de caractère en entier, afin de pourvoir comparer les deux valeurs avec <. 
                             int valeur2 = int.Parse(tableauEtudiant[j, 2]);
 
-                            if (valeur1 < valeur2){
+                            if (valeur1 < valeur2){ /* Condition qui vérifie si la valeur la plus haute dans tableau est inférieur à celle en dessous d'elle. 
+                                                        Si c'est le cas, ce n'est pas dans l'ordre croissant, donc il faut échanger leur positions */
 
-                                int save = valeur1;
+                                int save = valeur1; // Sauvegarde des notes pour inversions
                                 valeur1 = valeur2;
                                 valeur2 = save;
 
-                                string valeur1_string = valeur1.ToString();
+                                string valeur1_string = valeur1.ToString(); // Conversion des valeur d'entier vers chaine de caractère afin de pourvoir les restocker dans le tableau. 
                                 string valeur2_string = valeur2.ToString();
                                 
-                                tableauEtudiant[i, 2] = valeur1_string;
+                                tableauEtudiant[i, 2] = valeur1_string; // Affectation des nouvelles valeurs
                                 tableauEtudiant[j, 2] = valeur2_string;
 
-                                tableauEtudiant[i, 0] = prenom2;
+                                tableauEtudiant[i, 0] = prenom2; // Affectation des nouveaux prénoms
                                 tableauEtudiant[j, 0] = prenom1;
 
-                                tableauEtudiant[i, 1] = nom2;
+                                tableauEtudiant[i, 1] = nom2; // Affectation des nouveaux noms
                                 tableauEtudiant[j, 1] = nom1;
                             }
                         }
@@ -150,7 +151,7 @@ namespace TP_Noté_Exercice_2
             eleve2.getTableauAll(eleve2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
             eleve3.getTableauAll(eleve3); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
             
-            eleve1.trierTableau();
+            eleve1.trierTableau(); // Appel de la fonction trier tableau afin de mettre à jour l'ordre des élèves en fonction de leur note
             
             Console.WriteLine(TabEtudiant.tableauEtudiant[1, 0] + TabEtudiant.tableauEtudiant[1, 1] + TabEtudiant.tableauEtudiant[1, 2]);
             Console.WriteLine(TabEtudiant.tableauEtudiant[2, 0] + TabEtudiant.tableauEtudiant[2, 1] + TabEtudiant.tableauEtudiant[2, 2]);
