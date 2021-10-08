@@ -8,21 +8,24 @@ namespace TP_Noté_Exercice_2
         public static string [,] tableauEtudiant = tableauEtudiant = new string [30,3]; // Création du tableau en static afin d'avoir un tableau commun à tous les objets
         public TabEtudiant(){}
 
-        
 
-        // public void initTableau(){ // Fonction qui initialise le tableau
+        public static void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau avec son nom, prenom et note
+            tableauEtudiant[E.getIdEtudiant(),0] = E.getPrenom();
+            tableauEtudiant[E.getIdEtudiant(),1] = E.getNom();
+            tableauEtudiant[E.getIdEtudiant(),2] = (E.getNote()).ToString();
             
-        // }
+            E.trierTableau(); // Appel de la fonction trierTaleau, afin de mettre à jour le classement après l'ajout d'un nouvel élève
+            }
+    
 
+       public void getTableauAll(Etudiant E){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
+            int id = E.getIdEtudiant(); // Récupération de l'ID de l'étudiant pour l'identifier dans le tableau
+            Console.WriteLine("L'étudiant avec l'ID " + id + " s'appelle " + tableauEtudiant[id, 0] + " " + tableauEtudiant[id, 1] + " et a comme note : " + tableauEtudiant[id, 2] + "/20");
+           
+       }
 
-       public static void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau avec son nom, prenom et note
-           tableauEtudiant[E.getIdEtudiant(),0] = E.getPrenom();
-           tableauEtudiant[E.getIdEtudiant(),1] = E.getNom();
-           tableauEtudiant[E.getIdEtudiant(),2] = (E.getNote()).ToString();
-
-
-            // Double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
-           for (int i = 1; i < 5; i++)
+       public void trierTableau(){  // Fonction avec double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
+            for (int i = 1; i < 5; i++)
             {
                     if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
                         break;
@@ -70,19 +73,7 @@ namespace TP_Noté_Exercice_2
                 }
                 
             }
-       
-            }
-    
-
-       public void getTableauAll(Etudiant E){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
-            int id = E.getIdEtudiant(); // Récupération de l'ID de l'étudiant pour l'identifier dans le tableau
-            Console.WriteLine("L'étudiant avec l'ID " + id + " s'appelle " + tableauEtudiant[id, 0] + " " + tableauEtudiant[id, 1] + " et a comme note : " + tableauEtudiant[id, 2] + "/20");
-           
        }
-
-    //    public void trierTableau(){  
-            
-    //    }
     }
 
     class Etudiant : TabEtudiant // Classe fille Etudiant, qui hérite de Tab Etudiant
