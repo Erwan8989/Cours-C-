@@ -25,14 +25,14 @@ namespace TP_Noté_Exercice_2
        }
 
        public void trierTableau(){  // Fonction avec double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < Etudiant.getNbEtudiant(); i++)
             {
                     if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
                         break;
                     }
                     else
                     {  
-                    for (int j = 2; j < 5; j++){
+                    for (int j = 2; j < Etudiant.getNbEtudiant(); j++){
                         if (tableauEtudiant[j, 2] == null) // Condition qui permet de ne pas sortir des limites du tableau
                         {
                             break;
