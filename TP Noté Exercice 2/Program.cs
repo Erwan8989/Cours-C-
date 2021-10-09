@@ -18,21 +18,22 @@ namespace TP_Noté_Exercice_2
             }
     
 
-       public void getTableauAll(Etudiant E){ // Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
+       public void getTableauAll(Etudiant E){ /* Fonction qui permet de retourner toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
+                                                Correspond à la fonction "valeur" dans l'énoncé*/
             int id = E.getIdEtudiant(); // Récupération de l'ID de l'étudiant pour l'identifier dans le tableau
             Console.WriteLine("L'étudiant avec l'ID " + id + " s'appelle " + tableauEtudiant[id, 0] + " " + tableauEtudiant[id, 1] + " et a comme note : " + tableauEtudiant[id, 2] + "/20");
            
        }
 
        public void trierTableau(){  // Fonction avec double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i <= Etudiant.getNbEtudiant(); i++)
             {
                     if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
                         break;
                     }
                     else
                     {  
-                    for (int j = 2; j < 5; j++){
+                    for (int j = 2; j <= Etudiant.getNbEtudiant(); j++){
                         if (tableauEtudiant[j, 2] == null) // Condition qui permet de ne pas sortir des limites du tableau
                         {
                             break;
