@@ -1,34 +1,34 @@
-// using System;
+using System;
 
-// namespace Palindrome
-// {
-//       public class Palindrome {
+namespace Palindrome
+{
+      public class Palindrome {
   
-//         public static void Main(string[] args)
-//         {
+        public static void Main(string[] args)
+        {
            
-//           string MyString, Reversed=""; 
+          string MyString, Reversed=""; 
 
-//           Console.Write("S'il vous plaît, veuillez renseigner un mot : ");
-//           MyString = (Console.ReadLine());
+          Console.Write("S'il vous plaît, veuillez renseigner un mot : ");
+          MyString = (Console.ReadLine());
 
-//           for (int i = MyString.Length - 1; i >= 0; i--)  // Initialisation d'une boucle pour avoir la taille de la chaine inversée.
-//           {
-//             Reversed = Reversed + MyString[i];
-//           }    
+          for (int i = MyString.Length - 1; i >= 0; i--)  // Initialisation d'une boucle pour avoir la taille de la chaine inversée.
+          {
+            Reversed = Reversed + MyString[i];
+          }    
           
-//                   // Comparaison entre la taille du mot rentrée par l'utilisateur et la taille du mot inversé.
-//           if(MyString == Reversed) {    
-//             Console.Write("Le mot donnée est un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
-//           }
+                  // Comparaison entre la taille du mot rentrée par l'utilisateur et la taille du mot inversé.
+          if(MyString == Reversed) {    
+            Console.Write("Le mot donnée est un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
+          }
 
-//           else {
-//           Console.Write("Le mot donnée n'est pas un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
-//           }
+          else {
+          Console.Write("Le mot donnée n'est pas un Palindrome.\nLa chaîne entrée était {0} et la chaîne inversée est {1} ", MyString, Reversed);
+          }
 
-//         }
-//       }
-// }
+        }
+      }
+}
 
 // int i = 0;  Valeur i à initialiser pour une condition while
 // Cas pour une boucle while ! 
