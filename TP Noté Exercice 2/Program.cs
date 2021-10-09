@@ -136,6 +136,23 @@ namespace TP_Noté_Exercice_2
             }
         }
 
+
+        // public void Somme_Moyenne_Notes(int[] tableauEtudiant) {
+            
+        //     int somme = 0;
+        //     int moyenne = 0;
+ 
+        //     for (int i = 0; i < tableauEtudiant.Length; i++)
+        //     {
+        //         somme += tableauEtudiant.Length;
+        //     }
+
+        //     moyenne = somme / tableauEtudiant.Length; // somme divisée par le nombre total d'éléments dans le tableau à l'index  [i, 2]
+
+        //     Console.WriteLine("La somme des notes est  : " + somme);
+        //     Console.WriteLine("La moyennes des notes du tableau est : " + moyenne);
+        // }
+
         
     }
 
@@ -191,7 +208,7 @@ namespace TP_Noté_Exercice_2
             // Console.WriteLine("La note est " +eleve1.getNote());
 
             
-            Etudiant eleve2 = new Etudiant("Pierre", "Durant", 20); // Instantiation de la classe étudiant avec l'objet eleve1 
+            Etudiant eleve2 = new Etudiant("Pierre", "Durant", 20); // Instantiation de la classe étudiant avec l'objet eleve2 
 
             TabEtudiant.ajouter(eleve2); // Ajoute l'élève au tableau     
 
@@ -200,7 +217,7 @@ namespace TP_Noté_Exercice_2
             // eleve2.getTableauEtudiant(eleve1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
 
 
-            Etudiant eleve3 = new Etudiant("Toto", "Dupont", 15); // Instantiation de la classe étudiant avec l'objet eleve1 
+            Etudiant eleve3 = new Etudiant("Toto", "Dupont", 15); // Instantiation de la classe étudiant avec l'objet eleve3    
 
             TabEtudiant.ajouter(eleve3); // Ajoute l'élève au tableau    
             
@@ -212,12 +229,8 @@ namespace TP_Noté_Exercice_2
             // Console.WriteLine("L'ID de l'étudiant est " +eleve1.getIdEtudiant());
             
             
-            
-
-            
-            
-
-            Etudiant eleve4 = new Etudiant("James", "Durant", 8); // Instantiation de la classe étudiant avec l'objet eleve1 
+   
+            Etudiant eleve4 = new Etudiant("James", "Durant", 8); // Instantiation de la classe étudiant avec l'objet eleve4
             TabEtudiant.ajouter(eleve4); // Ajoute l'élève au tableau  
           
 
@@ -228,15 +241,15 @@ namespace TP_Noté_Exercice_2
 
             // Console.WriteLine("L'ID de l'étudiant est " +eleve4.getIdEtudiant());
 
-            
+            Etudiant eleve5 = new Etudiant("Merlin", "Tupi", 16); // Instantiation de la classe étudiant avec l'objet eleve5
+            TabEtudiant.ajouter(eleve5); // Ajoute l'élève au tableau  
+
             eleve1.supprimer(2);
-            eleve1.supprimer(2);
+            eleve1.supprimer(3);
             eleve1.getTableauAll();
+            
 
-
-             Etudiant eleve5 = new Etudiant("Merlin", "Tupi", 16); // Instantiation de la classe étudiant avec l'objet eleve1 
-              TabEtudiant.ajouter(eleve5); // Ajoute l'élève au tableau  
-             eleve1.getTableauAll();
+            // eleve1.getTableauAll();
 
         }
     }
