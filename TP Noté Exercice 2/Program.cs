@@ -5,7 +5,7 @@ namespace TP_Noté_Exercice_2
 
     class TabEtudiant
     {
-        public static string [,] tableauEtudiant = tableauEtudiant = new string [31,3]; // Création du tableau en static afin d'avoir un tableau commun à tous les objets
+        public static string [,] tableauEtudiant = tableauEtudiant = new string [32,3]; // Création du tableau en static afin d'avoir un tableau commun à tous les objets
         public TabEtudiant(){}
 
 
@@ -180,7 +180,16 @@ namespace TP_Noté_Exercice_2
         public Etudiant(string prenom, string nom, int note){ // Constructeur
             this.prenomEtudiant = prenom;
             this.nomEtudiant = nom;
-            this.noteEtudiant = note;
+
+            if (note < 0 || note > 20) // Vérifie que la note entrée se situe bien entre 0 et 20, sinon renvoyer exeption
+            {
+                throw new IndexOutOfRangeException("Note entrée incorrecte, veuillez saisir une note entre 0 et 20");
+            }
+            else
+            {
+                this.noteEtudiant = note;
+            }
+            
             nbEtudiant++; // Incrémente automatiquement, lors de l'instentiation de la classe le nombre total d'étudiant
             idEtudiant = nbEtudiant; // Affectation de l'identifiant étudiant, de valeur le nombre d'étudiant au total
         }
@@ -257,12 +266,66 @@ namespace TP_Noté_Exercice_2
             Etudiant eleve5 = new Etudiant("Merlin", "Tupi", 16); // Instantiation de la classe étudiant avec l'objet eleve5
             TabEtudiant.ajouter(eleve5); // Ajoute l'élève au tableau  
 
-            eleve1.supprimer(2);
-            eleve1.supprimer(3);
-            eleve1.getTableauAll();
+            // eleve1.supprimer(2);
+            // eleve1.supprimer(3);
             
-            eleve1.resultats();
+            
+            
             // eleve1.getTableauAll();
+
+            Etudiant eleve6 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve6);
+            Etudiant eleve7 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve7);
+            Etudiant eleve8 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve8);
+            Etudiant eleve9 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve9);
+            Etudiant eleve10 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve10);
+            Etudiant eleve11 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve11);
+            Etudiant eleve12 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve12);
+            Etudiant eleve13 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve13);
+            Etudiant eleve14 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve14);
+            Etudiant eleve15 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve15);
+            Etudiant eleve16 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve16);
+            Etudiant eleve17 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve17);
+            Etudiant eleve18 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve18);
+            Etudiant eleve19 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve19);
+            Etudiant eleve20 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve20);
+            Etudiant eleve21 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve21);
+            Etudiant eleve22 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve22);
+            Etudiant eleve23 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve23);
+            Etudiant eleve24 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve24);
+            Etudiant eleve25 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve25);
+            Etudiant eleve26 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve26);
+            Etudiant eleve27 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve27);
+            Etudiant eleve28 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve28);
+            Etudiant eleve29 = new Etudiant("Merlin", "Tupi", 16);
+            TabEtudiant.ajouter(eleve29);
+            Etudiant eleve30 = new Etudiant("Arthur", "Pandragon", 2);
+            TabEtudiant.ajouter(eleve30);
+
+            // eleve1.getTableauAll();
+            eleve1.resultats();
 
         }
     }
