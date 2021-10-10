@@ -149,7 +149,7 @@ namespace TP_Noté_Exercice_2
 
             moyenne = (double)somme / Etudiant.nbEtudiant; // somme divisée par le nombre total d'élève dans le la classe, résultat sous forme de double
 
-            Console.WriteLine("La moyennes des notes des élèves de la classe est : " + String.Format("{0:0.00}", + moyenne)); // Retourne la moyenne avec deux chiffres après la virgule
+            Console.WriteLine("La moyenne des notes des élèves de la classe est : " + String.Format("{0:0.00}", + moyenne)); // Retourne la moyenne avec deux chiffres après la virgule
         }
 
         
