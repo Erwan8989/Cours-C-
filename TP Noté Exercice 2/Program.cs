@@ -137,7 +137,7 @@ namespace TP_Noté_Exercice_2
         }
 
 
-        public void moyenneNote() {
+        public void moyenneNote() { // Fonction qui affiche la moyenne des notes de la classe
             
             int somme = 0;
             double moyenne = 0;
@@ -150,6 +150,20 @@ namespace TP_Noté_Exercice_2
             moyenne = (double)somme / Etudiant.nbEtudiant; // somme divisée par le nombre total d'élève dans le la classe, résultat sous forme de double
 
             Console.WriteLine("La moyenne des notes des élèves de la classe est : " + String.Format("{0:0.00}", + moyenne)); // Retourne la moyenne avec deux chiffres après la virgule
+        }
+
+        public void noteHaute(){ // Fonction qui retourne la note la plus haute de la classe
+            Console.WriteLine("La meilleure note de la classe est " + tableauEtudiant[1, 2] + "/20, détenu par " + tableauEtudiant[1, 0] + " " + tableauEtudiant[1, 1]);
+        }
+
+        public void noteBasse(){ // Fonction qui retourne la note la plus basse de la classe 
+            Console.WriteLine("La moins bonne note de la classe est " + tableauEtudiant[Etudiant.nbEtudiant, 2] + "/20, détenu par " + tableauEtudiant[Etudiant.nbEtudiant, 0] + " " + tableauEtudiant[Etudiant.nbEtudiant, 1]);
+        }
+
+        public void resultats(){ // Fonction qui retourne la note la plus haute, la plus basse, et la moyenne de toute
+            noteHaute();
+            noteBasse();
+            moyenneNote();
         }
 
         
@@ -247,7 +261,7 @@ namespace TP_Noté_Exercice_2
             eleve1.supprimer(3);
             eleve1.getTableauAll();
             
-            eleve1.moyenneNote();
+            eleve1.resultats();
             // eleve1.getTableauAll();
 
         }
