@@ -10,9 +10,9 @@ namespace TP_Noté_Exercice_2
 
 
         public static void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau avec son nom, prenom et note
-            tableauEtudiant[E.getIdEtudiant(),0] = E.getPrenom();
-            tableauEtudiant[E.getIdEtudiant(),1] = E.getNom();
-            tableauEtudiant[E.getIdEtudiant(),2] = (E.getNote()).ToString();
+            tableauEtudiant[Etudiant.getNbEtudiant(),0] = E.getPrenom();
+            tableauEtudiant[Etudiant.getNbEtudiant(),1] = E.getNom();
+            tableauEtudiant[Etudiant.getNbEtudiant(),2] = (E.getNote()).ToString();
             
             E.trierTableau(); // Appel de la fonction trierTaleau, afin de mettre à jour le classement après l'ajout d'un nouvel élève
             }
@@ -108,9 +108,9 @@ namespace TP_Noté_Exercice_2
             }
        }
 
-       public void supprimer(int id){
+       public void supprimer(int id){ // Fonction avec une boucle for qui rend null les champs du tableau selon l'ID indiqué
 
-           for (int i = 0; i < 3; i++) // Boucle for qui rend null les champs du tableau selon l'ID indiqué
+           for (int i = 0; i < 3; i++) 
            {
                tableauEtudiant[id, i] = null;
            }
@@ -123,6 +123,7 @@ namespace TP_Noté_Exercice_2
        }
 
         public void getTableauAll(){ // Fonction qui permet de retourner tous les champs du tableau 
+            Console.WriteLine("***** Affichage du tableau au complet *****");
             for(int i = 1; i <= 30; i++)
             {
                 if (tableauEtudiant[i, 0] == null) // Condition qui permet d'indiqué qu'une ligne du tableau n'appartient à aucun élève
@@ -134,6 +135,8 @@ namespace TP_Noté_Exercice_2
 
                 }
             }
+
+             Console.WriteLine("***** Fin d'affichage du tableau au complet *****");
         }
 
 
@@ -161,15 +164,19 @@ namespace TP_Noté_Exercice_2
         }
 
         public void resultats(){ // Fonction qui retourne la note la plus haute, la plus basse, et la moyenne de toute
+            Console.WriteLine("***** Affichage des résulats de la classe *****");
+
             noteHaute();
             noteBasse();
             moyenneNote();
+
+            Console.WriteLine("***** Fin d'affichage des résulats de la classe *****");
         }
 
         
     }
 
-    class Etudiant : TabEtudiant // Classe fille Etudiant, qui hérite de Tab Etudiant
+    class Etudiant : TabEtudiant // Classe fille Etudiant, qui hérite de TabEtudiant
     {
         private string nomEtudiant;
         private string prenomEtudiant;
@@ -222,111 +229,45 @@ namespace TP_Noté_Exercice_2
     {
         static void Main(string[] args)
         {
-            Etudiant eleve1 = new Etudiant("John", "Doe", 10); // Instantiation de la classe étudiant avec l'objet eleve1
+            // ***** Scénario *****
 
-            TabEtudiant.ajouter(eleve1); // Ajoute l'élève au tableau
+            Etudiant eleve1 = new Etudiant("Serge", "Gainsbourg", 10); // Instantiation de la classe étudiant avec l'objet eleve1
+            TabEtudiant.ajouter(eleve1); // Ajout de l'élève au tableau
 
-            // eleve1.getTableauEtudiant(eleve1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau      
-            // Console.WriteLine("La note est " +eleve1.getNote());
+            Etudiant eleve2 = new Etudiant("Louis", "de Funes", 20); // Instantiation de la classe étudiant avec l'objet eleve2 
+            TabEtudiant.ajouter(eleve2); // Ajout de l'élève au tableau
 
-            
-            Etudiant eleve2 = new Etudiant("Pierre", "Durant", 20); // Instantiation de la classe étudiant avec l'objet eleve2 
+            Etudiant eleve3 = new Etudiant("Walt", "Disney", 17); // Instantiation de la classe étudiant avec l'objet eleve3  
+            TabEtudiant.ajouter(eleve3); // Ajout de l'élève au tableau
 
-            TabEtudiant.ajouter(eleve2); // Ajoute l'élève au tableau     
+            Etudiant eleve4 = new Etudiant("George", "Washington", 5); // Instantiation de la classe étudiant avec l'objet eleve4
+            TabEtudiant.ajouter(eleve4); // Ajout de l'élève au tableau
 
-            // eleve1.getTableauEtudiant(eleve2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
+            Etudiant eleve5 = new Etudiant("Arthur", "Pandragon", 7); // Instantiation de la classe étudiant avec l'objet eleve5
+            TabEtudiant.ajouter(eleve5); // Ajout de l'élève au tableau
 
-            // eleve2.getTableauEtudiant(eleve1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau 
+            /* // Test d'ajout d'élève avec une note incorrecte
+            Etudiant eleve6 = new Etudiant("Jeff", "Bezos", 22); // Instantiation de la classe étudiant avec l'objet eleve4
+            TabEtudiant.ajouter(eleve6); // Ajoute l'élève au tableau
+            */
 
 
-            Etudiant eleve3 = new Etudiant("Toto", "Dupont", 15); // Instantiation de la classe étudiant avec l'objet eleve3    
+            eleve1.getTableauAll(); // Affiche l'ensemble du tableau par ordre croissant, en fonction des notes
 
-            TabEtudiant.ajouter(eleve3); // Ajoute l'élève au tableau    
-            
-            // eleve1.getTableauEtudiant(eleve1); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
-            // eleve2.getTableauEtudiant(eleve2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
-            // eleve3.getTableauEtudiant(eleve3); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
+            eleve2.getTableauEtudiant(eleve2); // Affiche toutes les informations d'un étudiant (prenom, nom et note) depuis le tableau
 
-            // Console.WriteLine("La note est " +eleve1.getNote());
-            // Console.WriteLine("L'ID de l'étudiant est " +eleve1.getIdEtudiant());
-            
-            
-   
-            Etudiant eleve4 = new Etudiant("James", "Durant", 8); // Instantiation de la classe étudiant avec l'objet eleve4
-            TabEtudiant.ajouter(eleve4); // Ajoute l'élève au tableau  
-          
+            eleve3.resultats(); // On affiche les résultats de la classe
 
-            // Console.WriteLine(TabEtudiant.tableauEtudiant[1, 0] + TabEtudiant.tableauEtudiant[1, 1] + TabEtudiant.tableauEtudiant[1, 2]);
-            // Console.WriteLine(TabEtudiant.tableauEtudiant[2, 0] + TabEtudiant.tableauEtudiant[2, 1] + TabEtudiant.tableauEtudiant[2, 2]);
-            // Console.WriteLine(TabEtudiant.tableauEtudiant[3, 0] + TabEtudiant.tableauEtudiant[3, 1] + TabEtudiant.tableauEtudiant[3, 2]);
-            // Console.WriteLine(TabEtudiant.tableauEtudiant[4, 0] + TabEtudiant.tableauEtudiant[4, 1] + TabEtudiant.tableauEtudiant[4, 2]);
+            eleve2.supprimer(2); // L'élève Walt Disney au rang 2 décide de quitter l'école. On le supprime donc du tableau
 
-            // Console.WriteLine("L'ID de l'étudiant est " +eleve4.getIdEtudiant());
+            eleve1.getTableauAll(); /* On affiche de nouveau tout le tableau, et constatons que l'élève Walt Disney n'est plus présent. 
+                                    Entre temps, le trie des notes a été mis à jour, et la place vide laissée, a été placé en fin de tableau */
 
-            Etudiant eleve5 = new Etudiant("Merlin", "Tupi", 16); // Instantiation de la classe étudiant avec l'objet eleve5
-            TabEtudiant.ajouter(eleve5); // Ajoute l'élève au tableau  
+            Etudiant eleve7 = new Etudiant("Tom", "Ellis", 4); // Un nouvel étudiant s'ajoute à la classe
+            TabEtudiant.ajouter(eleve7); // Ajout de l'élève au tableau
 
-            // eleve1.supprimer(2);
-            // eleve1.supprimer(3);
-            
-            
-            
-            // eleve1.getTableauAll();
-
-            Etudiant eleve6 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve6);
-            Etudiant eleve7 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve7);
-            Etudiant eleve8 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve8);
-            Etudiant eleve9 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve9);
-            Etudiant eleve10 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve10);
-            Etudiant eleve11 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve11);
-            Etudiant eleve12 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve12);
-            Etudiant eleve13 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve13);
-            Etudiant eleve14 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve14);
-            Etudiant eleve15 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve15);
-            Etudiant eleve16 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve16);
-            Etudiant eleve17 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve17);
-            Etudiant eleve18 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve18);
-            Etudiant eleve19 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve19);
-            Etudiant eleve20 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve20);
-            Etudiant eleve21 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve21);
-            Etudiant eleve22 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve22);
-            Etudiant eleve23 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve23);
-            Etudiant eleve24 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve24);
-            Etudiant eleve25 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve25);
-            Etudiant eleve26 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve26);
-            Etudiant eleve27 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve27);
-            Etudiant eleve28 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve28);
-            Etudiant eleve29 = new Etudiant("Merlin", "Tupi", 16);
-            TabEtudiant.ajouter(eleve29);
-            Etudiant eleve30 = new Etudiant("Arthur", "Pandragon", 2);
-            TabEtudiant.ajouter(eleve30);
-
-            // eleve1.getTableauAll();
-            eleve1.resultats();
-
+            eleve7.getTableauAll(); // On affiche de nouveau tout le tableau mis à jour
+            eleve7.resultats(); // On affiche de nouveau les résultats de la classe mis à jour
         }
     }
 
