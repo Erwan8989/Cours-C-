@@ -3,11 +3,8 @@
 namespace TP_Noté_Exercice_2
 {
 
-    class TabEtudiant
-    {
+    class TabEtudiant{
         public static string [,] tableauEtudiant = tableauEtudiant = new string [32,3]; // Création du tableau en static afin d'avoir un tableau commun à tous les objets
-        public TabEtudiant(){}
-
 
         public static void ajouter(Etudiant E){ // Fonction qui permet d'ajouter un étudiant au tableau avec son nom, prenom et note
             tableauEtudiant[Etudiant.getNbEtudiant(),0] = E.getPrenom();
@@ -26,17 +23,15 @@ namespace TP_Noté_Exercice_2
            
        }
 
-       public void trierTableau(){  // Fonction avec double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
-            for (int i = 1; i <= Etudiant.getNbEtudiant(); i++)
-            {
-                    if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
-                        break;
-                    }
-                    else
-                    {  
+        public void trierTableau(){  // Fonction avec double boucle for qui va permettre de trier les élèves par ordre croissant selon leur note
+            for (int i = 1; i <= Etudiant.getNbEtudiant(); i++){
+                if (tableauEtudiant[i+1, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
+                    break;
+                }
+                else{  
                     for (int j = i+1; j <= Etudiant.getNbEtudiant(); j++){
-                        if (tableauEtudiant[j, 2] == null) // Condition qui permet de ne pas sortir des limites du tableau
-                        {
+                        if (tableauEtudiant[j, 2] == null){ // Condition qui permet de ne pas sortir des limites du tableau
+
                             break;
                         }
                         else{ 
@@ -71,18 +66,14 @@ namespace TP_Noté_Exercice_2
                             }
                         }
                     }
-
-                }
-                
+                } 
             }
-            TableauVide(); 
-            
-       }
+            TableauVide();
+        }
 
-       public void TableauVide(){//Fonction qui permet de placer les emplacement vides en fin de tableau
+        public void TableauVide(){ //Fonction qui permet de placer les emplacement vides en fin de tableau
            for (int i = 1; i < 30; i++){ 
-                if (tableauEtudiant[i, 0] == null && tableauEtudiant[i+1, 0] != null)
-                {
+                if (tableauEtudiant[i, 0] == null && tableauEtudiant[i+1, 0] != null){
                     string prenom1 = tableauEtudiant[i+1, 0]; // Stockage des prenoms dans une variable
 
                     string nom1 = tableauEtudiant[i+1, 1]; // Stockage des noms dans une variable
@@ -106,28 +97,24 @@ namespace TP_Noté_Exercice_2
                                    
                 }
             }
-       }
+        }
 
-       public void supprimer(int id){ // Fonction avec une boucle for qui rend null les champs du tableau selon l'ID indiqué
+        public void supprimer(int id){ // Fonction avec une boucle for qui rend null les champs du tableau selon l'ID indiqué
 
-           for (int i = 0; i < 3; i++) 
-           {
+           for (int i = 0; i < 3; i++){
                tableauEtudiant[id, i] = null;
            }
 
            TableauVide(); // Appel de la fonction pour mettre le vide laissé par la suppresion en fin de tableau
 
            Etudiant.nbEtudiant--; // Décrémenter de 1 le nombre d'étudiant
-
-            
-       }
+        }
 
         public void getTableauAll(){ // Fonction qui permet de retourner tous les champs du tableau 
             Console.WriteLine("***** Affichage du tableau au complet *****");
-            for(int i = 1; i <= 30; i++)
-            {
-                if (tableauEtudiant[i, 0] == null) // Condition qui permet d'indiqué qu'une ligne du tableau n'appartient à aucun élève
-                {
+            for(int i = 1; i <= 30; i++){
+                if (tableauEtudiant[i, 0] == null){ // Condition qui permet d'indiqué qu'une ligne du tableau n'appartient à aucun élève
+
                     Console.WriteLine("La place n°" + i + " n'est pas attribué");
                 }
                 else{
@@ -140,13 +127,13 @@ namespace TP_Noté_Exercice_2
         }
 
 
-        public void moyenneNote() { // Fonction qui affiche la moyenne des notes de la classe
+        public void moyenneNote(){ // Fonction qui affiche la moyenne des notes de la classe
             
             int somme = 0;
             double moyenne = 0;
  
-            for (int i = 1; i <= Etudiant.nbEtudiant; i++) // Boucle for qui addition les notes total de tous les élèves
-            {
+            for (int i = 1; i <= Etudiant.nbEtudiant; i++){ // Boucle for qui addition les notes total de tous les élèves
+            
                 somme += int.Parse(tableauEtudiant[i, 2]);
             }
 
@@ -176,8 +163,7 @@ namespace TP_Noté_Exercice_2
         
     }
 
-    class Etudiant : TabEtudiant // Classe fille Etudiant, qui hérite de TabEtudiant
-    {
+    class Etudiant : TabEtudiant{ // Classe fille Etudiant, qui hérite de TabEtudiant
         private string nomEtudiant;
         private string prenomEtudiant;
         private int noteEtudiant;
@@ -188,12 +174,10 @@ namespace TP_Noté_Exercice_2
             this.prenomEtudiant = prenom;
             this.nomEtudiant = nom;
 
-            if (note < 0 || note > 20) // Vérifie que la note entrée se situe bien entre 0 et 20, sinon renvoyer exeption
-            {
+            if (note < 0 || note > 20){ // Vérifie que la note entrée se situe bien entre 0 et 20, sinon renvoyer exeption
                 throw new IndexOutOfRangeException("Note entrée incorrecte, veuillez saisir une note entre 0 et 20");
             }
-            else
-            {
+            else{
                 this.noteEtudiant = note;
             }
             
