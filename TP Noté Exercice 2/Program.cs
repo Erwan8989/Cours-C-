@@ -137,21 +137,20 @@ namespace TP_Noté_Exercice_2
         }
 
 
-        // public void Somme_Moyenne_Notes(int[] tableauEtudiant) {
+        public void moyenneNote() {
             
-        //     int somme = 0;
-        //     int moyenne = 0;
+            int somme = 0;
+            double moyenne = 0;
  
-        //     for (int i = 0; i < tableauEtudiant.Length; i++)
-        //     {
-        //         somme += tableauEtudiant.Length;
-        //     }
+            for (int i = 1; i <= Etudiant.nbEtudiant; i++) // Boucle for qui addition les notes total de tous les élèves
+            {
+                somme += int.Parse(tableauEtudiant[i, 2]);
+            }
 
-        //     moyenne = somme / tableauEtudiant.Length; // somme divisée par le nombre total d'éléments dans le tableau à l'index  [i, 2]
+            moyenne = (double)somme / Etudiant.nbEtudiant; // somme divisée par le nombre total d'élève dans le la classe, résultat sous forme de double
 
-        //     Console.WriteLine("La somme des notes est  : " + somme);
-        //     Console.WriteLine("La moyennes des notes du tableau est : " + moyenne);
-        // }
+            Console.WriteLine("La moyennes des notes du tableau est : " + String.Format("{0:0.00}", + moyenne)); // Retourne la moyenne avec deux chiffres après la virgule
+        }
 
         
     }
@@ -248,7 +247,7 @@ namespace TP_Noté_Exercice_2
             eleve1.supprimer(3);
             eleve1.getTableauAll();
             
-
+            eleve1.moyenneNote();
             // eleve1.getTableauAll();
 
         }
