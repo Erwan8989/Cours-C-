@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = Lib
-build_property.ProjectDir = d:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\Sources\Lib\
+build_property.RootNamespace = ConsoleProg
+build_property.ProjectDir = d:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\Sources\ConsoleProg\
