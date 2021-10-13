@@ -21,7 +21,7 @@ namespace test
         public void testMethod () {
             Calcules c = new Calcules();
             double m = c.CalculerMoyenne(11,11,12);
-            Xunit.Assert.Equal(m, 11.2);
+            Xunit.Assert.Equal(m, 11.466666666666667);
         }
     }
 }
