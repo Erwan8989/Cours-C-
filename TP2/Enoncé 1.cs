@@ -47,7 +47,7 @@ class Program
       //Ou bien  
 
       public Service(int nbRL, int nbRO)
-      {        this.NbRessourcesLibres=nbRL;
+      {  this.NbRessourcesLibres=nbRL;
          this.NbRessourcesOccupées=nbRO;
       }
       //Déclaration des méthodes Get et Set
