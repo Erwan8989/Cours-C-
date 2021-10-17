@@ -1,5 +1,5 @@
 ﻿using System;
-using CompteBancaire;
+
 
 namespace AppConsole
 {
@@ -7,8 +7,6 @@ namespace AppConsole
     {
         static void Main(string[] args)
         {
-
-
 
         }
     }
