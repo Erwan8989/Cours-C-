@@ -100,6 +100,7 @@ namespace Compte_Bancaire // espace de nom
                 if (this.Solde < prixRetrait)
                 {
                     Console.WriteLine("Solde insuffisant !");
+                    break;
                 }
 
             } while (prixRetrait <= 0);
@@ -129,8 +130,7 @@ namespace Compte_Bancaire // espace de nom
             if (this.date2 == 12){
                 this.date2 = 1;
                 }
-            }
-            
+            }       
         }
 
         } 
