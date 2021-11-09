@@ -11,6 +11,7 @@ namespace Cours_C_
         { 
 
             // ************************************************** Entrer nom et prenom ************************************************
+            
             /*
             //Saisie du prenom
 
@@ -27,7 +28,6 @@ namespace Cours_C_
             Console.WriteLine("Vous vous nommez donc {0} {1}", PNom, Nom); 
 
            */
-            
 
             // ******************************* Comparer deux valeurs ************************************
 

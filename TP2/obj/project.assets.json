@@ -8,7 +8,7 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jérémy\\.nuget\\packages\\": {}
+    "C:\\Users\\oldon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP2\\TP2.csproj",
       "projectName": "TP2",
       "projectPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP2\\TP2.csproj",
-      "packagesPath": "C:\\Users\\Jérémy\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\oldon\\.nuget\\packages\\",
       "outputPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jérémy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\oldon\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

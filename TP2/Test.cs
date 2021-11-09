@@ -6,22 +6,22 @@
 // {
 //     class Program
 //     {
-
 //         public static void Main(string[] args) {           
         
 //         int[]tab =  new Etudiant.get_initTableau();
            
 //         for(int i = 0; i < tab.Length; i++){
+
 //             tab[i] = i;
 //             Console.WriteLine($"la case {i} du tableau contient une valeur de {tab[i]}");
-//            }    }
-     
+//            }      
+//         }
 //     }
 
 //     class Etudiant 
 //     {
-
 //         // private int []tab1;
+    
 
 //        public int[] get_initTableau(){
 
@@ -31,10 +31,7 @@
 //               return tab1;
 
 //         }
-
-        
 //     } 
-
 // }
     
 
