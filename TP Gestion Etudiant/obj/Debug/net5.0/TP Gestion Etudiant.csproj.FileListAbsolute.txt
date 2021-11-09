@@ -1,0 +1,16 @@
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.exe
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.deps.json
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.runtimeconfig.json
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.runtimeconfig.dev.json
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\ref\TP Gestion Etudiant.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\bin\Debug\net5.0\TP Gestion Etudiant.pdb
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.csproj.AssemblyReference.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.AssemblyInfoInputs.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.AssemblyInfo.cs
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.csproj.CoreCompileInputs.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\ref\TP Gestion Etudiant.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.pdb
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\TP Gestion Etudiant\obj\Debug\net5.0\TP Gestion Etudiant.genruntimeconfig.cache

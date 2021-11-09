@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TP Gestion Etudiant/1.0.0": {
+        "runtime": {
+          "TP Gestion Etudiant.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP Gestion Etudiant/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
