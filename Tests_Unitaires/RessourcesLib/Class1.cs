@@ -1,6 +1,6 @@
-﻿using System;
+﻿    using System;
 
-namespace Compte_Bancaire
+    namespace Compte_Bancaire
 {
     public class Compte {
 
@@ -15,6 +15,8 @@ namespace Compte_Bancaire
             protected int date2;   
             protected double montant;
             protected double prixRetrait;
+
+            protected bool boolean = false;
             
 // Conctructeurs
         public Compte (){ }
@@ -51,21 +53,22 @@ namespace Compte_Bancaire
 
             }
 
-// Ajout d'une saisie utilisateur 
-// Utilisation du mot clé new pour le masquage du membre hérité 
-        public void Affichage(){
+             public bool getboolean {
+                    get => boolean;
+                    set =>  boolean = value;
+            }
+
+              public void Affichage(){
             Console.WriteLine("Titulaire : {0};\nN° de compte: {1};\nMontant :   {2};\n", this.Titulaire , this.NumeroCompte , this.Solde);
         }
          
         protected void Crediter(double montant) {
             Console.WriteLine("Votre solde est de : " + this.Solde);
 
-            this.montant = 0;
-            
-            while (montant <= 0)
-            {
-                Console.Write("Combien voulez-vous deposer sur votre compte : ");
-                montant = int.Parse(Console.ReadLine());
+            // Les test unitaires ne permettant pas la saisie d'un montant à l'utilisateur, celui-ci à été commenté.
+
+            //     Console.Write("Combien voulez-vous deposer sur votre compte : ");
+            //     montant = int.Parse(Console.ReadLine());
 
                 if (montant >= 0) {
 
@@ -75,21 +78,24 @@ namespace Compte_Bancaire
 
                 else 
                 {
-                    Console.WriteLine("Crédit impossible");
-                    break;
-                }
-            }                 
+                    Console.WriteLine("Crédit impossible");     
+                }   
+
+                if (this.solde >= 500) {
+                    this.boolean = true;
+                }  
+
+                else {
+                    this.boolean = false;
+                }              
         }
 
         protected void Debiter(double prixRetrait){
-            Console.WriteLine("Votre solde est de : " + this.Solde);
-            this.prixRetrait = 0;
-            
-            while (prixRetrait <= 0)
+           
+            // Les test unitaires ne permettant pas la saisie d'un montant à l'utilisateur, celui-ci à été commenté.
 
-            {
-                Console.Write("qu'elle montant voulez vous retirer : ");
-                prixRetrait = int.Parse(Console.ReadLine());
+                // Console.Write("qu'elle montant voulez vous retirer : ");
+                // prixRetrait = int.Parse(Console.ReadLine());
 
                 if ((this.Solde - prixRetrait) >= 0)
                 {
@@ -99,10 +105,17 @@ namespace Compte_Bancaire
 
                 else {
                     Console.WriteLine("Solde insuffisant !");
-                    break;
                 }
+
+                 if (this.solde >= 500) {
+                    this.boolean = true;
+                }  
+
+                else {
+                    this.boolean = false;
+                }  
             }          
-        }
+        
 
         public void Taxe()
         {          
@@ -134,7 +147,8 @@ namespace Compte_Bancaire
             Debiter(prixRetrait);
         }
 } 
-
+// fin classe mère
+// Classe CompteChèque dérivant de CompteBancaire
     public class CompteCheque : Compte {
 
         public CompteCheque () {}
@@ -182,5 +196,4 @@ namespace Compte_Bancaire
             }
         }
     }
-
 }

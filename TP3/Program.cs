@@ -54,6 +54,8 @@ namespace Compte_Bancaire // espace de nom
 
             }
 
+           
+
 // Ajout d'une saisie utilisateur 
 // Utilisation du mot clé new pour le masquage du membre hérité 
         public void Affichage(){
@@ -63,10 +65,8 @@ namespace Compte_Bancaire // espace de nom
         protected void Crediter(double montant) {
             Console.WriteLine("Votre solde est de : " + this.Solde);
 
-            this.montant = 0;
+            // this.montant = 0;
             
-            while (montant <= 0)
-            {
                 Console.Write("Combien voulez-vous deposer sur votre compte : ");
                 montant = int.Parse(Console.ReadLine());
 
@@ -79,32 +79,31 @@ namespace Compte_Bancaire // espace de nom
                 else 
                 {
                     Console.WriteLine("Crédit impossible");
-                    break;
                 }
-            }                 
+                          
         }
 
         protected void Debiter(double prixRetrait){
             Console.WriteLine("Votre solde est de : " + this.Solde);
-            this.prixRetrait = 0;
+            // this.prixRetrait = 0;
             
-            while (prixRetrait <= 0)
-
-            {
                 Console.Write("qu'elle montant voulez vous retirer : ");
                 prixRetrait = int.Parse(Console.ReadLine());
 
                 if ((this.Solde - prixRetrait) >= 0)
                 {
-                    this.Solde -= prixRetrait;
+                    this.Solde -= prixRetrait;         
                     Console.WriteLine("Votre solde est maintenant de : " + this.Solde);         
                 } 
 
                 else {
                     Console.WriteLine("Solde insuffisant !");
-                    break;
                 }
-            }          
+
+
+
+
+                     
         }
 
         public void Taxe()

@@ -1,74 +1,42 @@
 using System;
 using Xunit;
+using Compte_Bancaire;
 
 namespace RessourcesLibTest
 {
      public class Program
     {
 
-        [Test]
-        static void FirstAccount(string[] args)
+        [Fact]
+        public void test1()
         {
 
-            // Scenario 1 :
-            Console.WriteLine("Test Scenario Compte Bancaire :\n");    
+            Compte Perso1 = new Compte ("John Doe", 8367471, 500, 2); // Test de ka fonction depot et retrait
+            Perso1.depot(200);
+            Perso1.retrait(100);
+            Perso1.retrait(1000);
 
-            Compte CB1 = new Compte("Michel OBAMA",2339483,20000,0.11);
-            CB1.Affichage();
-            CB1.depot(0);
-            CB1.Affichage();
-            CB1.retrait(0);
-            CB1.Affichage();
-            CB1.Taxe();
-            CB1.Affichage();
-            CB1.depot(0);
-            CB1.Affichage();
-            CB1.TauxInteret();
-            CB1.Affichage();
-            CB1.retrait(0); 
-
+            Xunit.Assert.Equal(600, Perso1.Solde);   //  L'opération réussi car le montant est bien égal à 600 après les 3 oparations.
         }
 
-        [Test]
-        static void CompteCheque(string[] args)
-        {
-            // Scenario 2 :
-            Console.WriteLine("Test Scenario Compte Cheque :\n");
+        [Fact]
+        public void test2() // Test d'un booléen supérieur à 500 : est true
 
-            CompteCheque CC1 = new CompteCheque("Nathalie EPSI",6747483,0,0.06);
-            CC1.Affichage();
-            CC1.depot(0);
-            CC1.Affichage();
-            CC1.depot(0);
-            CC1.Affichage();
-            CC1.retrait(0);
-            CC1.Taxe();
-            CC1.Affichage();
-            CC1.TauxInteret();
-            CC1.Affichage();
-            CC1.depot(0);
-            CC1.TauxInteret();
-            CC1.Affichage();
+        {
+            CompteLivret Perso2 = new CompteLivret ("Jeff Bezos", 8237465, 1000000000, 0.0000000000001);
+            Perso2.depot(5000);
+
+            Xunit.Assert.True (Perso2.getboolean); // L'opération réussi car le Booléen est bien supérieur à 500
         }
 
-        [Test]
-        static void CompteLivret(string[] args)
+        [Fact]
+         public void test3() // Test d'un booléen inférieur à 500 : est false
+
         {
-            // Scenario 3 :
+            CompteCheque Perso3 = new CompteCheque ("Louis de Funes", 8237465, 35000, 0.5);
+            Perso3.retrait(34700);
 
-            Console.WriteLine("Test Scenario Compte Livret :\n");
-
-            CompteLivret CL1 = new CompteLivret("John DOE",547362,0,0.1);
-            CL1.Affichage();
-            CL1.depot(0);
-            CL1.Affichage();
-            CL1.retrait(0);
-            CL1.Taxe();
-            CL1.TauxInteret();
-            CL1.Affichage();
-            CL1.depot(0);
-            CL1.Taxe();
-            CL1.Affichage();
+            Xunit.Assert.False (Perso3.getboolean);    // L'opération réussi car le Booléen est bien inférieur à 500      
         }
     }
 }
