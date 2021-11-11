@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "502mSm+Pd/Z4bulGtO9yxMfR8C7q0mWs0DG0iaqG5eIufsWZytzPH6smrXazy1yuBpRTqEE+AmNujtDM9MCvog==",
+  "dgSpecHash": "3y1v9JfUhIfP6oZEhr36r4yaQ4V71l2OVnCUSkKPiA5cPLxUQtoTn0CooP36IXUucwkfCxFHrVXM8vPnC4fymg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oldon\\Documents\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP3\\TP3.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\oldon\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\oldon\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\oldon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\oldon\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP3\\TP3.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
