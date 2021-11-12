@@ -54,8 +54,6 @@ namespace Compte_Bancaire // espace de nom
 
             }
 
-           
-
 // Ajout d'une saisie utilisateur 
 // Utilisation du mot clé new pour le masquage du membre hérité 
         public void Affichage(){
@@ -98,12 +96,7 @@ namespace Compte_Bancaire // espace de nom
 
                 else {
                     Console.WriteLine("Solde insuffisant !");
-                }
-
-
-
-
-                     
+                }             
         }
 
         public void Taxe()
