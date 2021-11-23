@@ -10,3 +10,15 @@ C:\Users\oldon\Documents\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\
 C:\Users\oldon\Documents\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.dll
 C:\Users\oldon\Documents\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\ref\RessourcesLib.dll
 C:\Users\oldon\Documents\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.pdb
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\bin\Debug\net5.0\RessourcesLib.deps.json
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\bin\Debug\net5.0\RessourcesLib.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\bin\Debug\net5.0\ref\RessourcesLib.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\bin\Debug\net5.0\RessourcesLib.pdb
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.csproj.AssemblyReference.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.AssemblyInfoInputs.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.AssemblyInfo.cs
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.csproj.CoreCompileInputs.cache
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\ref\RessourcesLib.dll
+D:\Cours B2 2021-2022\Langage C#\Cours-C-\Tests_Unitaires\RessourcesLib\obj\Debug\net5.0\RessourcesLib.pdb
