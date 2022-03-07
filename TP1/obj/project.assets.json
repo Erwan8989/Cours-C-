@@ -8,7 +8,7 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\oldon\\.nuget\\packages\\": {}
+    "C:\\Users\\Jérémy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP1\\Cours_C#.csproj",
       "projectName": "Cours_C#",
       "projectPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP1\\Cours_C#.csproj",
-      "packagesPath": "C:\\Users\\oldon\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Jérémy\\.nuget\\packages\\",
       "outputPath": "D:\\Cours B2 2021-2022\\Langage C#\\Cours-C-\\TP1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oldon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jérémy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
